@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/200095802?v=4">
     <link rel="icon" href="https://avatars.githubusercontent.com/u/200095802?v=4">
     <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/200095802?v=4">
     
-    <title>Sagar Keshwala | Strategic Technology Partner</title>
-    <meta name="description" content="Strategic technology partner delivering discreet white-label systems for agencies and global businesses. Bespoke web platforms, scalable architecture, long-term growth.">
+    <title>Sagar Keshwala | Strategic Technology Partner for Agencies</title>
+    <meta name="description" content="Founder & Strategic Technology Partner to Agencies & Growth-Stage Businesses. Delivering discreet, high-performance white-label solutions globally.">
     <meta name="author" content="Sagar Keshwala">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sagarkeshwala.github.io/" />
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sagarkeshwala.github.io/">
-    <meta property="og:title" content="Sagar Keshwala | Strategic Technology Partner">
-    <meta property="og:description" content="Discreet technology leadership for agencies that scale globally. White-label systems, engineered for long-term growth.">
+    <meta property="og:title" content="Sagar Keshwala | Strategic Technology Partner for Agencies">
+    <meta property="og:description" content="Founder & Strategic Technology Partner to Agencies & Growth-Stage Businesses.">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/200095802?v=4">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://sagarkeshwala.github.io/">
-    <meta name="twitter:title" content="Sagar Keshwala | Strategic Technology Partner">
-    <meta name="twitter:description" content="Discreet technology leadership for agencies that scale globally. White-label systems, engineered for long-term growth.">
+    <meta name="twitter:title" content="Sagar Keshwala | Strategic Technology Partner for Agencies">
+    <meta name="twitter:description" content="Serving Global Agencies & Distributed Teams with high-performance white-label architecture.">
     <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/200095802?v=4">
     <meta name="twitter:creator" content="@itprosk">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
@@ -35,26 +37,22 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Sagar Keshwala",
-      "jobTitle": "Strategic Technology Partner",
+      "jobTitle": "Founder & Strategic Technology Partner",
       "url": "https://sagarkeshwala.github.io/",
       "image": "https://avatars.githubusercontent.com/u/200095802?v=4",
+      "knowsAbout": ["White-label development", "System architecture", "Scalable web platforms", "Next.js", "PHP"],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Strategic Technology Partner",
+        "occupationLocation": { "@type": "AdministrativeArea", "name": "Global" }
+      },
       "sameAs": [
         "https://www.linkedin.com/in/sagar-keshwala/",
         "https://github.com/sagarkeshwala",
         "https://twitter.com/itprosk"
       ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "SK-iTPRO",
-        "url": "http://www.sk-itpro.com"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Rajkot",
-        "addressRegion": "Gujarat",
-        "addressCountry": "India"
-      },
-      "description": "Strategic technology partner delivering discreet white-label systems for agencies and global businesses."
+      "worksFor": { "@type": "Organization", "name": "SK-iTPRO", "url": "http://www.sk-itpro.com" },
+      "description": "Strategic Technology Partner to Agencies & Growth-Stage Businesses."
     }
     </script>
 
@@ -63,68 +61,62 @@
             --bg-color: #f0ede4; 
             --primary: #4682b4;
             --secondary: #2ecc71;
-            
-            --glass-bg: rgba(255, 255, 255, 0.65); 
-            --glass-border: rgba(255, 255, 255, 0.8);
+            --glass-bg: rgba(255, 255, 255, 0.75); 
+            --glass-border: rgba(255, 255, 255, 0.9);
             --text-main: #333333;
             --text-light: #555555;
             --whatsapp: #25D366;
-            --shadow: 0 15px 40px rgba(0,0,0,0.05);
+            --shadow: 0 20px 60px rgba(0,0,0,0.06);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-color);
+            background: linear-gradient(135deg, #f0ede4 0%, #e6e9f0 100%);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
             color: var(--text-main);
             overflow-x: hidden;
             height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             position: relative;
         }
 
-        /* --- INVISIBLE SCROLLBARS --- */
-        .sidebar::-webkit-scrollbar, 
-        .page-section::-webkit-scrollbar { display: none; }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @media (prefers-reduced-motion: reduce) { body { animation: none; } }
+
+        /* Scrollbars */
+        .sidebar::-webkit-scrollbar, .page-section::-webkit-scrollbar { display: none; }
         .sidebar, .page-section { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* --- SVG STYLES --- */
         .icon { width: 18px; height: 18px; fill: currentColor; display: inline-block; vertical-align: middle; }
         .icon-lg { width: 40px; height: 40px; fill: var(--primary); margin-bottom: 15px; }
 
-        /* --- MAIN LAYOUT --- */
+        /* Layout */
         .container {
-            width: 90%;
-            max-width: 1280px;
-            height: 85vh;
+            width: 90%; max-width: 1280px; height: 85vh;
             background: var(--glass-bg);
-            /* Reduced Blur to 10px for Performance */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
             border: 1px solid var(--glass-border);
             box-shadow: var(--shadow);
             border-radius: 30px;
-            display: grid;
-            grid-template-columns: 350px 1fr;
-            overflow: hidden;
-            position: relative;
-            z-index: 10;
+            display: grid; grid-template-columns: 350px 1fr;
+            overflow: hidden; position: relative; z-index: 10;
         }
 
-        /* --- SIDEBAR --- */
+        /* Sidebar */
         .sidebar {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.6);
             border-right: 1px solid var(--glass-border);
-            padding: 35px 30px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-y: auto;
-            z-index: 10;
+            padding: 40px 30px; text-align: center;
+            display: flex; flex-direction: column; align-items: center;
+            overflow-y: auto; z-index: 10;
         }
 
         .profile-img {
@@ -135,11 +127,7 @@
 
         .name { font-size: 1.6rem; font-weight: 700; margin-bottom: 5px; color: #2c3e50; }
         
-        .role-container {
-            height: 35px; display: flex; align-items: center; 
-            justify-content: center; margin-bottom: 25px;
-        }
-
+        .role-container { height: 35px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; }
         .role { 
             color: var(--primary); font-weight: 600; background: #fff; 
             padding: 0 20px; height: 100%; display: flex; align-items: center;
@@ -147,7 +135,7 @@
             justify-content: center; border: 1px solid rgba(0,0,0,0.05);
         }
 
-        .social-grid { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+        .social-grid { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
         .social-btn {
             width: 34px; height: 34px; background: #fff; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
@@ -156,27 +144,21 @@
         }
         .social-btn:hover { background: var(--primary); color: white; transform: translateY(-3px); }
 
-        .hire-group { display: flex; flex-direction: column; gap: 8px; width: 100%; margin-top: 10px; }
+        .hire-group { display: flex; flex-direction: column; gap: 10px; width: 100%; margin-top: auto; }
         .btn-hire {
-            padding: 10px; border-radius: 50px; text-decoration: none; font-weight: 600;
-            font-size: 0.85rem; transition: 0.3s; border: 1px solid rgba(0,0,0,0.1);
+            padding: 12px; border-radius: 50px; text-decoration: none; font-weight: 600;
+            font-size: 0.9rem; transition: 0.3s; border: 1px solid rgba(0,0,0,0.1);
             display: flex; align-items: center; justify-content: center; gap: 8px;
-            background: rgba(255, 255, 255, 0.8); color: var(--text-main);
+            background: #fff; color: var(--text-main);
         }
-        .btn-hire:hover { transform: translateY(-2px); background: #fff; }
-        .btn-upwork:hover { color: #14a800; border-color: #14a800; }
-        .btn-fiverr:hover { color: #1dbf73; border-color: #1dbf73; }
-        
+        .btn-hire:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .btn-whatsapp { 
-            background: var(--whatsapp); color: white; border: none; padding: 12px;
+            background: var(--whatsapp); color: white; border: none;
             box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
         }
-        .btn-whatsapp:hover { background: #20bd5a; color: white; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3); }
+        .btn-whatsapp:hover { background: #20bd5a; color: white; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3); }
 
-        /* --- CONTENT AREA --- */
-        .content-wrapper { position: relative; overflow: hidden; }
-        
-        /* Nav Controls */
+        /* Navigation Controls */
         .nav-controls {
             position: absolute; top: 30px; right: 40px; z-index: 20;
             display: flex; flex-direction: column; align-items: center; gap: 10px;
@@ -186,15 +168,27 @@
             display: flex; background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.1); 
             border-radius: 30px; overflow: hidden;
         }
-        .arrow-btn { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text-light); transition: 0.3s; background: transparent; border: none; }
+        .arrow-btn { 
+            width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; 
+            cursor: pointer; color: var(--text-light); transition: 0.3s; background: transparent; border: none; 
+        }
         .arrow-btn:hover { background: #fff; color: var(--primary); }
+        
+        /* THIS IS THE KEY CSS FOR YOUR LOGIC */
+        .arrow-btn[aria-disabled="true"] { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
+        
         .arrow-btn:first-child { border-right: 1px solid rgba(0,0,0,0.1); }
 
         .nav-indicators { display: flex; gap: 8px; }
         .indicator-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(0,0,0,0.2); transition: 0.3s; }
         .indicator-dot.active { background: var(--primary); transform: scale(1.2); }
 
-        .page-section { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 60px 50px; overflow-y: auto; opacity: 0; transform: translateX(50px); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); pointer-events: none; }
+        .content-wrapper { position: relative; overflow: hidden; }
+        .page-section { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 60px 50px; 
+            overflow-y: auto; opacity: 0; transform: translateX(50px); 
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); pointer-events: none; 
+        }
         .page-section.active { opacity: 1; transform: translateX(0); pointer-events: all; z-index: 5; }
 
         .page-title { 
@@ -203,39 +197,32 @@
             -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
             background-size: 200% auto; animation: shine 5s linear infinite; 
         }
-        @keyframes shine { to { background-position: 200% center; } }
-
-        .about-text p { margin-bottom: 35px; line-height: 1.8; color: var(--text-main); font-size: 1.05rem; }
         
+        .about-text p { margin-bottom: 30px; line-height: 1.8; color: var(--text-main); font-size: 1.05rem; }
         .philosophy-box {
             background: rgba(255, 255, 255, 0.5); border-left: 4px solid var(--secondary);
             border-radius: 0 10px 10px 0; padding: 20px; margin: 30px 0;
             font-weight: 500; color: #2c3e50; font-style: italic;
         }
-
+        
+        /* HEADING HIERARCHY */
         .section-header h2 { font-size: 1.3rem; margin-bottom: 20px; border-bottom: 2px solid rgba(0,0,0,0.05); padding-bottom: 10px; display: inline-block; color: var(--text-main); }
         
         .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 40px; }
         .info-item .label { color: var(--text-light); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 3px; }
         .info-item .value { font-weight: 600; color: var(--text-main); font-size: 1rem; }
 
-        .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
-        .service-card { 
-            background: rgba(255,255,255,0.6); border: 1px solid white; padding: 30px; 
-            border-radius: 20px; text-align: center; transition: 0.3s; 
+        .services-grid, .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .service-card, .contact-card { 
+            background: rgba(255,255,255,0.6); padding: 30px; border-radius: 20px; 
+            border: 1px solid white; text-align: center; transition: 0.3s; 
         }
-        .service-card:hover { border-color: var(--secondary); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); background: white; }
-        .service-card h3 { font-size: 1.2rem; margin: 10px 0; color: #2c3e50; }
-
-        .contact-intro p { font-size: 1.1rem; color: var(--text-light); margin-bottom: 35px; line-height: 1.8; }
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
-        .contact-card {
-            background: rgba(255,255,255,0.6); padding: 30px; border-radius: 20px;
-            border: 1px solid white; text-align: center; transition: 0.3s;
-            text-decoration: none; color: inherit;
+        .contact-card { text-decoration: none; color: inherit; display: block; }
+        .service-card:hover, .contact-card:hover { 
+            border-color: var(--secondary); transform: translateY(-5px); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); background: white; 
         }
-        .contact-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-color: var(--primary); background: white; }
-        .contact-card h3 { font-size: 1.1rem; margin: 15px 0 5px; }
+        .service-card h3, .contact-card h3 { font-size: 1.2rem; margin: 10px 0; color: #2c3e50; }
         .contact-card span { font-size: 0.9rem; color: var(--text-light); }
         .status-dot { height: 10px; width: 10px; background-color: #2ecc71; border-radius: 50%; display: inline-block; margin-right: 5px; }
 
@@ -243,7 +230,6 @@
             body { height: auto; overflow-y: auto; display: block; padding: 20px; }
             .container { grid-template-columns: 1fr; height: auto; overflow: visible; }
             .sidebar { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 30px 20px; }
-            /* Mobile Arrows Fix */
             .nav-controls { position: absolute; top: 20px; right: 20px; bottom: auto; align-items: flex-end; }
             .page-section { position: relative; opacity: 1; transform: none; padding: 30px 20px; height: auto; display: none; }
             .page-section.active { display: block; }
@@ -256,11 +242,7 @@
     <div class="container">
         
         <aside class="sidebar">
-            <img 
-                src="https://avatars.githubusercontent.com/u/200095802?v=4" 
-                alt="Sagar Keshwala" 
-                class="profile-img"
-            >
+            <img src="https://avatars.githubusercontent.com/u/200095802?v=4" alt="Sagar Keshwala" class="profile-img" loading="lazy" decoding="async">
             
             <h1 class="name">Sagar Keshwala</h1>
             <div class="role-container">
@@ -274,13 +256,17 @@
             </div>
 
             <div class="hire-group">
-                <a href="http://www.sk-itpro.com" target="_blank" class="btn-hire btn-dl"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> Visit Company</a>
-                <a href="https://www.upwork.com/freelancers/sagarkeshwala2" target="_blank" class="btn-hire btn-upwork"><svg class="icon" style="fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg> Engage via Upwork</a>
-                <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="btn-hire btn-fiverr"><svg class="icon" style="fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Engage via Fiverr</a>
-                
                 <a href="https://wa.me/916354868473" target="_blank" class="btn-hire btn-whatsapp">
                     <svg class="icon" style="fill:white;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> 
                     WhatsApp Consultation
+                </a>
+                <a href="mailto:skitpro92@gmail.com" class="btn-hire">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> 
+                    Email Me
+                </a>
+                <a href="http://www.sk-itpro.com" target="_blank" class="btn-hire">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> 
+                    Visit Company
                 </a>
             </div>
         </aside>
@@ -289,21 +275,22 @@
             
             <div class="nav-controls">
                 <div class="nav-arrows">
-                    <button class="arrow-btn" onclick="prevPage()" aria-label="Previous section"><svg class="icon" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
-                    <button class="arrow-btn" onclick="nextPage()" aria-label="Next section"><svg class="icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+                    <button class="arrow-btn" onclick="prevPage()" aria-label="Previous section" aria-disabled="true"><svg class="icon" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+                    <button class="arrow-btn" onclick="nextPage()" aria-label="Next section" aria-disabled="false"><svg class="icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
                 </div>
                 <div class="nav-indicators">
                     <span class="indicator-dot active"></span>
                     <span class="indicator-dot"></span>
                     <span class="indicator-dot"></span>
+                    <span class="indicator-dot"></span>
                 </div>
             </div>
 
-            <section class="page-section active" id="page-1" role="region" aria-label="Partner with SK-iTPRO">
-                <h1 class="page-title">Partner with SK-iTPRO</h1>
+            <section class="page-section active" id="page-1" role="region" aria-labelledby="hero-title">
+                <h1 id="hero-title" class="page-title">Partner with SK-iTPRO</h1>
                 <div class="about-text">
                     <p style="font-size: 1.1rem; font-weight: 500; color: #2c3e50;">
-                        Founder & Strategic Technology Partner.
+                        Founder & Strategic Technology Partner to Agencies & Growth-Stage Businesses.
                     </p>
                     <p>
                         I help agencies and growing businesses scale through discreet, high-performance white-label technology solutions—built to operate seamlessly behind your brand.
@@ -318,7 +305,7 @@
 
                     <div class="section-header"><h2>Key Details</h2></div>
                     <div class="info-grid">
-                        <div class="info-item"><span class="label">Location</span><span class="value">Rajkot, India · Working Globally</span></div>
+                        <div class="info-item"><span class="label">Location</span><span class="value">Serving Global Agencies & Distributed Teams</span></div>
                         <div class="info-item"><span class="label">Experience</span><span class="value">9+ Years · Founder-Level Delivery</span></div>
                         <div class="info-item"><span class="label">Email</span><span class="value"><a href="mailto:skitpro92@gmail.com" style="text-decoration:none; color:var(--text-main);">skitpro92@gmail.com</a></span></div>
                         <div class="info-item"><span class="label">Focus</span><span class="value">B2B · White-Label · Long-Term Partnerships</span></div>
@@ -326,8 +313,8 @@
                 </div>
             </section>
 
-            <section class="page-section" id="page-2" role="region" aria-label="What I Do">
-                <h2 class="page-title">What I Do</h2>
+            <section class="page-section" id="page-2" role="region" aria-labelledby="services-title">
+                <h2 id="services-title" class="page-title">What I Do</h2>
                 <p style="margin-bottom: 30px; font-size: 1.05rem; color: #555;">I operate as a silent execution layer for agencies—engineering, maintaining, and scaling systems your clients experience as refined, stable, and dependable.</p>
                 <div class="services-grid">
                     <div class="service-card">
@@ -353,8 +340,8 @@
                 </div>
             </section>
 
-            <section class="page-section" id="page-3" role="region" aria-label="Get in Touch">
-                <h2 class="page-title">Get in Touch</h2>
+            <section class="page-section" id="page-3" role="region" aria-labelledby="contact-title">
+                <h2 id="contact-title" class="page-title">Get in Touch</h2>
                 <div class="contact-intro">
                     <p style="margin-bottom: 35px;">
                         If you’re an agency or business looking for a reliable, long-term technology partner, I’d be glad to explore how we can work together.
@@ -378,52 +365,77 @@
                     </a>
                 </div>
             </section>
+
+            <section class="page-section" id="page-4" role="region" aria-labelledby="engage-title">
+                <h2 id="engage-title" class="page-title">Engagement Models</h2>
+                <p style="margin-bottom: 30px; font-size: 1.05rem; color: #555;">
+                    For short-term contracts, defined project scopes, or platform-specific needs, you can engage my services securely through trusted global marketplaces.
+                </p>
+                <div class="contact-grid">
+                    <a href="https://www.upwork.com/freelancers/sagarkeshwala2" target="_blank" class="contact-card">
+                        <svg class="icon-lg" style="fill:#14a800; margin-bottom:10px;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                        <h3>Engage via Upwork</h3>
+                        <span>Best for hourly & fixed-price contracts</span>
+                    </a>
+
+                    <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="contact-card">
+                        <svg class="icon-lg" style="fill:#1dbf73; margin-bottom:10px;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <h3>Engage via Fiverr</h3>
+                        <span>Best for packaged & defined gigs</span>
+                    </a>
+                </div>
+            </section>
+
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js" defer></script>
-    
     <script>
-        // Wait for scripts to load
-        window.onload = function() {
-            // Disable Ripples on Mobile for Performance
-            if (typeof $ !== 'undefined' && window.innerWidth > 768) {
-                $('body').ripples({
-                    resolution: 512,
-                    dropRadius: 20,
-                    perturbance: 0.03,
-                });
-            }
-        };
-
         // Page Navigation Logic
         let currentPage = 1;
-        const totalPages = 3;
+        const totalPages = 4;
         const dots = document.querySelectorAll('.indicator-dot');
+        const prevBtn = document.querySelector('.nav-arrows button:first-child');
+        const nextBtn = document.querySelector('.nav-arrows button:last-child');
 
-        function updateDots(index) {
+        function updateNavState() {
+            // Update Dots
             dots.forEach(dot => dot.classList.remove('active'));
-            dots[index - 1].classList.add('active');
+            if(dots[currentPage - 1]) dots[currentPage - 1].classList.add('active');
+
+            // Update Arrows Real State (Accessibility + CSS)
+            if (currentPage === 1) {
+                prevBtn.setAttribute('aria-disabled', 'true');
+            } else {
+                prevBtn.setAttribute('aria-disabled', 'false');
+            }
+
+            if (currentPage === totalPages) {
+                nextBtn.setAttribute('aria-disabled', 'true');
+            } else {
+                nextBtn.setAttribute('aria-disabled', 'false');
+            }
         }
 
         function showPage(pageId) {
             document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active'));
             document.getElementById('page-' + pageId).classList.add('active');
-            updateDots(pageId);
+            currentPage = pageId;
+            updateNavState();
         }
 
         function nextPage() {
-            currentPage = (currentPage < totalPages) ? currentPage + 1 : 1;
-            showPage(currentPage);
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+            }
         }
 
         function prevPage() {
-            currentPage = (currentPage > 1) ? currentPage - 1 : totalPages;
-            showPage(currentPage);
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
         }
 
-        // Typewriter Effect (UPDATED ROLES WITH SAFETY CHECK)
+        // Typewriter Effect
         const roles = [
             "Founder @ SK-iTPRO",
             "Strategic Technology Partner",
@@ -435,19 +447,24 @@
         const typeTarget = document.getElementById("typewriter");
 
         function typeWriter() {
-            if (!typeTarget) return; // Safety check
-            
+            if (!typeTarget) return;
             const currentRole = roles[roleIndex];
+            
             if (isDeleting) {
                 typeTarget.textContent = currentRole.substring(0, charIndex--);
                 if (charIndex < 0) { isDeleting = false; roleIndex = (roleIndex + 1) % roles.length; setTimeout(typeWriter, 500); return; }
             } else {
                 typeTarget.textContent = currentRole.substring(0, charIndex++);
-                if (charIndex > currentRole.length) { isDeleting = true; setTimeout(typeWriter, 2000); return; }
+                if (charIndex === currentRole.length + 1) { isDeleting = true; setTimeout(typeWriter, 2500); return; }
             }
             setTimeout(typeWriter, isDeleting ? 50 : 100);
         }
-        document.addEventListener('DOMContentLoaded', typeWriter);
+        
+        // Initial Setup
+        document.addEventListener('DOMContentLoaded', () => {
+            typeWriter();
+            updateNavState(); // Check arrows on load
+        });
     </script>
 
 </body>
