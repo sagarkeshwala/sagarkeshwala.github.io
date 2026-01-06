@@ -3,404 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sagar Keshwala - Founder of SK-iTPRO. Providing premium white-label web & app solutions globally.">
+    <meta name="description" content="Sagar Keshwala - Founder SK-iTPRO. White Label Solutions & Strategic Tech Partner.">
     <title>Sagar Keshwala | Founder SK-iTPRO</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         :root {
-            --bg-dark: #030712;
-            --primary: #3b82f6;
-            --accent: #06b6d4;
-            --gold: #f59e0b;
-            --upwork: #14a800;
-            --fiverr: #1dbf73;
-            --glass-bg: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
+            --bg-color: #030014;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --card-hover: rgba(255, 255, 255, 0.12);
+            --primary-glow: #7000df;
+            --accent-glow: #00d2ff;
             --text-main: #ffffff;
-            --text-muted: #9ca3af;
+            --text-muted: #94a3b8;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-dark);
+            background-color: var(--bg-color);
             color: var(--text-main);
-            overflow-x: hidden;
-            perspective: 1000px;
-        }
-
-        /* --- Dynamic Aurora Background Animation --- */
-        .aurora-bg {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        .aurora-blob {
-            position: absolute;
-            filter: blur(100px);
-            opacity: 0.4;
-            animation: move 20s infinite alternate ease-in-out;
-        }
-        .blob-1 { top: -10%; left: -10%; width: 50%; height: 50%; background: var(--primary); }
-        .blob-2 { bottom: -10%; right: -10%; width: 60%; height: 60%; background: var(--accent); animation-delay: -5s; }
-        .blob-3 { bottom: 20%; left: 20%; width: 40%; height: 40%; background: #8b5cf6; animation-delay: -10s; }
-        
-        @keyframes move {
-            0% { transform: translate(0, 0) rotate(0deg); }
-            100% { transform: translate(200px, 100px) rotate(45deg); }
-        }
-
-        /* --- Typography & Utilities --- */
-        h1, h2, h3 { font-family: 'Outfit', sans-serif; font-weight: 900; }
-        .gradient-text {
-            background: linear-gradient(135deg, #ffffff 30%, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .container { max-width: 1200px; margin: auto; padding: 0 5%; }
-
-        /* --- Navbar (Floating Glass) --- */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 30px;
-            position: fixed;
-            width: 90%;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 20px;
-            z-index: 100;
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(20px);
-            border-radius: 50px;
-            border: 1px solid var(--glass-border);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        .logo { font-size: 1.5rem; font-weight: 900; letter-spacing: -1px; font-family: 'Outfit'; }
-        .nav-btn {
-            background: rgba(255,255,255,0.1);
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 1px solid var(--glass-border);
-        }
-        .nav-btn:hover { background: var(--primary); border-color: var(--primary); box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
-
-        /* --- HERO SECTION (The Pro Part) --- */
-        .hero {
+            font-family: 'Plus Jakarta Sans', sans-serif;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: 120px;
-            padding-bottom: 60px;
-        }
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        
-        .hero-badge {
-            display: inline-block;
-            padding: 8px 16px;
-            background: rgba(245, 158, 11, 0.15);
-            color: var(--gold);
-            border: 1px solid var(--gold);
-            border-radius: 50px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-            margin-bottom: 25px;
-        }
-        .hero h1 {
-            font-size: 4.5rem;
-            line-height: 1.1;
-            margin-bottom: 25px;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            color: var(--text-muted);
-            margin-bottom: 40px;
-            max-width: 550px;
-        }
-
-        /* Hero Visual - Layered Rotating Glass */
-        .hero-visual {
-            position: relative;
-            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
-            perspective: 1000px;
+            padding: 40px 20px;
+            /* Noise Texture Overlay for that premium grainy feel */
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"), 
+            radial-gradient(circle at 50% 0%, #1a0b2e 0%, #030014 60%);
         }
-        .glass-stack {
-            position: relative;
-            width: 350px;
-            height: 450px;
-            transform-style: preserve-3d;
-            animation: float-slow 6s ease-in-out infinite;
-        }
-        @keyframes float-slow { 0%, 100% { transform: translateY(0) rotateX(0); } 50% { transform: translateY(-20px) rotateX(5deg); } }
 
-        .glass-layer {
-            position: absolute;
-            inset: 0;
-            border-radius: 30px;
-            background: var(--glass-bg);
-            backdrop-filter: blur(30px);
-            border: 1px solid var(--glass-border);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-        .layer-1 { transform: translateZ(0px); z-index: 3; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid rgba(255,255,255,0.2); }
-        .layer-2 { transform: translateZ(-40px) translateX(30px) translateY(30px) rotateZ(-5deg); z-index: 2; background: linear-gradient(135deg, rgba(59,130,246,0.1), transparent); opacity: 0.7; }
-        .layer-3 { transform: translateZ(-80px) translateX(-30px) translateY(-30px) rotateZ(5deg); z-index: 1; background: linear-gradient(135deg, rgba(6,182,212,0.1), transparent); opacity: 0.5; }
-
-        .hero-avatar {
-            width: 180px;
-            height: 180px;
+        /* --- BACKGROUND ORBS (The Saiyura Glow) --- */
+        .orb {
+            position: fixed;
             border-radius: 50%;
-            border: 5px solid rgba(255, 255, 255, 0.15);
-            padding: 5px;
-            background: radial-gradient(circle, rgba(59,130,246,0.3), transparent);
-            box-shadow: 0 0 50px rgba(59, 130, 246, 0.4);
+            filter: blur(100px);
+            z-index: -1;
+            opacity: 0.5;
+            animation: breathe 10s infinite alternate;
         }
-        .hero-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
-        .layer-1 h3 { margin-top: 25px; font-size: 1.8rem; }
-        .layer-1 span { color: var(--primary); font-weight: 600; letter-spacing: 2px; }
+        .orb-1 { width: 400px; height: 400px; background: var(--primary-glow); top: -100px; left: -100px; }
+        .orb-2 { width: 300px; height: 300px; background: var(--accent-glow); bottom: -50px; right: -50px; animation-delay: -5s; }
 
-        /* Buttons */
-        .btn-group { display: flex; gap: 20px; flex-wrap: wrap; }
-        .btn {
-            padding: 18px 36px;
-            border-radius: 16px;
+        @keyframes breathe {
+            0% { transform: scale(1); opacity: 0.4; }
+            100% { transform: scale(1.2); opacity: 0.6; }
+        }
+
+        /* --- MAIN LAYOUT: THE BENTO GRID --- */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto auto;
+            gap: 20px;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        /* --- GLASS CARDS --- */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 30px;
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Subtle spotlight effect on hover */
+        .card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: var(--card-hover);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+        }
+
+        /* Typography */
+        h1, h2, h3 { font-family: 'Outfit', sans-serif; font-weight: 700; color: white; }
+        p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-top: 10px; }
+        
+        .badge {
+            background: linear-gradient(90deg, #2c0b4f, #4c1d95);
+            color: #d8b4fe;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
             font-weight: 700;
-            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(216, 180, 254, 0.2);
+            align-self: flex-start;
+            margin-bottom: 15px;
+        }
+
+        /* --- GRID AREAS --- */
+        
+        /* 1. Profile / Intro (Big Left Block) */
+        .area-intro {
+            grid-column: span 2;
+            justify-content: center;
+        }
+        .intro-header h1 { font-size: 2.8rem; line-height: 1.1; margin-bottom: 15px; }
+
+        /* 2. The Photo (Big Right Block) */
+        .area-photo {
+            grid-column: span 2;
+            height: 350px;
+            padding: 0;
+            border: 0;
+            background: transparent;
             display: flex;
             align-items: center;
-            gap: 10px;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-size: 1.1rem;
+            justify-content: center;
             position: relative;
+        }
+        .photo-container {
+            width: 100%;
+            height: 100%;
+            border-radius: 24px;
             overflow: hidden;
+            position: relative;
+            border: 1px solid var(--card-border);
         }
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            color: white;
-            border: 1px solid rgba(255,255,255,0.1);
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Filter to blend image better with dark theme */
+            filter: brightness(0.95) contrast(1.05); 
+            transition: transform 0.5s;
         }
-        .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.6); }
-        .btn-outline {
-            background: transparent;
-            color: white;
-            border: 2px solid rgba(255,255,255,0.2);
-        }
-        .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; transform: translateY(-5px); }
-
-        /* --- SERVICES SECTION (3D Hover Cards) --- */
-        .services { padding: 120px 0; position: relative; z-index: 2; }
-        .section-header { text-align: center; margin-bottom: 80px; }
-        .section-header h2 { font-size: 3.5rem; margin-bottom: 20px; }
-        .section-header p { font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: auto; }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-        }
+        .area-photo:hover img { transform: scale(1.05); }
         
-        .tilt-card {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(30px);
-            border: 1px solid var(--glass-border);
-            padding: 50px 40px;
+        .status-badge {
+            position: absolute;
+            bottom: 20px; left: 20px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
             border-radius: 30px;
-            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s;
-            transform-style: preserve-3d;
-            position: relative;
-            overflow: hidden;
+            color: white;
+            font-size: 0.8rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        /* 3D Hover Effect - Simple version */
-        .tilt-card:hover {
-            transform: translateY(-15px) scale(1.03);
-            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8), inset 0 0 0 2px rgba(59,130,246,0.3);
-            border-color: var(--primary);
-        }
-        .tilt-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at top right, rgba(59,130,246,0.1), transparent 60%);
-            opacity: 0; transition: opacity 0.6s;
-        }
-        .tilt-card:hover::before { opacity: 1; }
+        .dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 10px #22c55e; }
 
-        .card-icon {
-            font-size: 3rem;
-            margin-bottom: 30px;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
+        /* 3. Services (Bottom Row) */
+        .area-services { grid-column: span 2; }
+        .service-list { list-style: none; margin-top: 20px; }
+        .service-list li {
+            display: flex; align-items: center; gap: 10px;
+            margin-bottom: 12px;
+            color: #cbd5e1;
+            font-weight: 500;
         }
-        .tilt-card h3 { font-size: 1.8rem; margin-bottom: 20px; }
-        .tilt-card p { color: var(--text-muted); font-size: 1.1rem; line-height: 1.7; }
+        .service-list i { color: var(--accent-glow); }
 
-        /* --- CTA SECTION --- */
-        .cta-section {
-            padding: 150px 0;
+        /* 4. Connect / Hire (Bottom Row) */
+        .area-connect { grid-column: span 2; }
+        
+        .btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: auto;
+            padding-top: 20px;
+        }
+        .btn {
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 12px;
             text-align: center;
-            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
+            font-weight: 600;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.95rem;
         }
-        .cta-box {
-            background: linear-gradient(135deg, rgba(20, 168, 0, 0.1), rgba(29, 191, 115, 0.1));
-            border: 2px solid rgba(255,255,255,0.1);
-            padding: 80px 50px;
-            border-radius: 40px;
-            position: relative;
-            overflow: hidden;
-        }
-        .cta-box h2 { font-size: 4rem; margin-bottom: 30px; }
-        .hire-btns { display: flex; justify-content: center; gap: 30px; margin-top: 50px; flex-wrap: wrap; }
         
-        .btn-upwork { background: var(--upwork); color: white; font-size: 1.3rem; padding: 20px 40px; border-radius: 20px; }
-        .btn-upwork:hover { box-shadow: 0 0 50px rgba(20, 168, 0, 0.6); transform: scale(1.05); }
+        /* Button Colors */
+        .btn-upwork { background: rgba(20, 168, 0, 0.1); color: #22c55e; border: 1px solid rgba(20, 168, 0, 0.2); }
+        .btn-upwork:hover { background: #22c55e; color: white; transform: translateY(-3px); }
         
-        .btn-fiverr { background: transparent; border: 3px solid var(--fiverr); color: var(--fiverr); font-size: 1.3rem; padding: 18px 38px; border-radius: 20px; }
-        .btn-fiverr:hover { background: var(--fiverr); color: white; box-shadow: 0 0 50px rgba(29, 191, 115, 0.6); transform: scale(1.05); }
+        .btn-fiverr { background: rgba(29, 191, 115, 0.1); color: #1dbf73; border: 1px solid rgba(29, 191, 115, 0.2); }
+        .btn-fiverr:hover { background: #1dbf73; color: white; transform: translateY(-3px); }
 
-        /* Footer */
-        footer { padding: 50px; text-align: center; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 1.1rem; }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .hero h1 { font-size: 3.5rem; }
-            .hero-grid { grid-template-columns: 1fr; text-align: center; }
-            .hero-content { margin-bottom: 60px; }
-            .btn-group { justify-content: center; }
-            .hero-visual { height: 400px; }
-            .section-header h2 { font-size: 2.5rem; }
-            .cta-box h2 { font-size: 2.5rem; }
+        .btn-company {
+            margin-top: 15px;
+            background: white;
+            color: black;
+            width: 100%;
         }
-        @media (max-width: 768px) {
-             nav { width: 95%; padding: 15px 20px; }
-             .hero { padding-top: 150px; }
-             .hero h1 { font-size: 2.8rem; }
-             .glass-stack { width: 90%; height: 400px; }
+        .btn-company:hover { background: #e2e8f0; transform: translateY(-3px); }
+
+        /* --- MOBILE RESPONSIVE --- */
+        @media (max-width: 900px) {
+            body { padding: 20px 10px; align-items: flex-start; }
+            .bento-grid { grid-template-columns: 1fr; gap: 15px; }
+            .area-intro, .area-photo, .area-services, .area-connect { grid-column: span 1; }
+            .area-photo { height: 350px; } /* Increased height for mobile visibility */
+            .intro-header h1 { font-size: 2.2rem; }
+            .card { padding: 25px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="aurora-bg">
-        <div class="aurora-blob blob-1"></div>
-        <div class="aurora-blob blob-2"></div>
-        <div class="aurora-blob blob-3"></div>
-    </div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
 
-    <nav>
-        <div class="logo gradient-text">SK-iTPRO</div>
-        <a href="http://www.sk-itpro.com" target="_blank" class="nav-btn">
-            <i class="fas fa-globe-americas"></i> Visit Company Website
-        </a>
-    </nav>
+    <div class="bento-grid">
+        
+        <div class="card area-intro">
+            <div class="badge">Founder @ SK-iTPRO</div>
+            <div class="intro-header">
+                <h1>Sagar Keshwala</h1>
+                <h2 style="font-weight: 400; color: var(--text-muted); font-size: 1.4rem;">Architecting <span style="color: white;">Digital Excellence</span></h2>
+            </div>
+            <p style="margin-top: 20px; font-size: 1.1rem;">
+                I provide high-performance, <strong>White-Label Web & App Solutions</strong> for agencies worldwide. 
+                I act as your silent technical partner, delivering international standard code that scales.
+            </p>
+            <a href="http://www.sk-itpro.com" target="_blank" class="btn btn-company">
+                <i class="fas fa-globe"></i> Visit Company Website
+            </a>
+        </div>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-grid">
+        <div class="card area-photo">
+            <div class="photo-container">
+                <img src="https://avatars.githubusercontent.com/u/sagarkeshwala?v=4" alt="Sagar Keshwala">
                 
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="fas fa-crown"></i> Founder & Strategic Partner
-                    </div>
-                    <h1>The Silent Engine Behind <span class="gradient-text">Global Digital Brands.</span></h1>
-                    <p>
-                        I don't just code; I engineer scalable business solutions. Providing premium, secure, and high-performance White-Label services for agencies that demand excellence without the overhead.
-                    </p>
-                    <div class="btn-group">
-                        <a href="https://wa.me/916354868473" class="btn btn-primary">
-                            <i class="fab fa-whatsapp"></i> Priority Discussion
-                        </a>
-                        <a href="mailto:skitpro92@gmail.com" class="btn btn-outline">
-                            <i class="fas fa-envelope-open-text"></i> Email Direct
-                        </a>
-                    </div>
+                <div class="status-badge">
+                    <div class="dot"></div>
+                    <span>Available for Projects</span>
                 </div>
-
-                <div class="hero-visual">
-                    <div class="glass-stack">
-                        <div class="glass-layer layer-3"></div>
-                        <div class="glass-layer layer-2"></div>
-                        
-                        <div class="glass-layer layer-1">
-                            <div class="hero-avatar">
-                                <img src="https://avatars.githubusercontent.com/u/sagarkeshwala?v=4" alt="Sagar Keshwala">
-                            </div>
-                            <h3>Sagar Keshwala</h3>
-                            <span>FOUNDER @ SK-iTPRO</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
 
-    <section class="services container">
-        <div class="section-header">
-            <h2>Premium <span class="gradient-text">White-Label Solutions</span></h2>
-            <p>Providing international standard architecture, security, and performance tailored for agency growth.</p>
+        <div class="card area-services">
+            <h3><i class="fas fa-layer-group" style="color: var(--accent-glow);"></i> Core Expertise</h3>
+            <p>Tailored for Agency Growth & Enterprise Needs.</p>
+            <ul class="service-list">
+                <li><i class="fas fa-check-circle"></i> White-Label Web/App Development</li>
+                <li><i class="fas fa-check-circle"></i> Custom CRM & SaaS Architecture</li>
+                <li><i class="fas fa-check-circle"></i> Performance & SEO Optimization</li>
+                <li><i class="fas fa-check-circle"></i> Next.js & PHP Expert Solutions</li>
+            </ul>
         </div>
 
-        <div class="services-grid">
-            <div class="tilt-card">
-                <i class="fas fa-code-branch card-icon"></i>
-                <h3>Full-Cycle Development</h3>
-                <p>End-to-end development for complex web platforms & mobile apps. Built with future-proof tech for speed and absolute scalability.</p>
-            </div>
-            <div class="tilt-card">
-                <i class="fas fa-user-shield card-icon"></i>
-                <h3>Agency White-Label Partner</h3>
-                <p>I operate as your invisible technical co-founder. You maintain client relationships; I deliver world-class code under your brand.</p>
-            </div>
-            <div class="tilt-card">
-                <i class="fas fa-cubes-stacked card-icon"></i>
-                <h3>Custom Solution Architecture</h3>
-                <p>Beyond templates. I design bespoke digital ecosystems engineered specifically to meet unique business objectives and KPIs.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section container">
-        <div class="cta-box">
-            <h2 class="gradient-text">Ready for High-Impact Execution?</h2>
-            <p style="font-size: 1.4rem; color: #d1d5db;">Engage me via secure international platforms.</p>
+        <div class="card area-connect">
+            <h3><i class="fas fa-handshake" style="color: #d8b4fe;"></i> Let's Collaborate</h3>
+            <p>Secure hire via international platforms.</p>
             
-            <div class="hire-btns">
+            <div class="btn-container">
                 <a href="https://www.upwork.com/freelancers/sagarkeshwala2" target="_blank" class="btn btn-upwork">
-                    <i class="fas fa-shield-check"></i> Hire on Upwork
+                    <i class="fas fa-circle-check"></i> Upwork
                 </a>
                 <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="btn btn-fiverr">
-                    <i class="fas fa-star"></i> Hire on Fiverr
+                    <i class="fas fa-star"></i> Fiverr
+                </a>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <a href="https://wa.me/916354868473" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem;">
+                    <i class="fab fa-whatsapp"></i> +91 63548 68473
                 </a>
             </div>
         </div>
-    </section>
 
-    <footer>
-        <p>© 2026 Sagar Keshwala. Founder & Principal Engineer at SK-iTPRO. All rights reserved.</p>
-    </footer>
+    </div>
 
 </body>
 </html>
