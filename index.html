@@ -3,287 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sagar Keshwala - Founder SK-iTPRO. White Label Solutions & Strategic Tech Partner.">
     <title>Sagar Keshwala | Founder SK-iTPRO</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         :root {
-            --bg-color: #030014;
-            --card-bg: rgba(255, 255, 255, 0.03);
-            --card-border: rgba(255, 255, 255, 0.08);
-            --card-hover: rgba(255, 255, 255, 0.12);
-            --primary-glow: #7000df;
-            --accent-glow: #00d2ff;
-            --text-main: #ffffff;
-            --text-muted: #94a3b8;
+            --neon-blue: #00f3ff;
+            --neon-purple: #bc13fe;
+            --bg-dark: #050505;
+            --glass: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            min-height: 100vh;
+            background-color: var(--bg-dark);
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            height: 100vh;
+            overflow: hidden;
             display: flex;
-            justify-content: center;
             align-items: center;
-            padding: 40px 20px;
-            /* Noise Texture Overlay for that premium grainy feel */
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"), 
-            radial-gradient(circle at 50% 0%, #1a0b2e 0%, #030014 60%);
+            justify-content: center;
+            position: relative;
         }
 
-        /* --- BACKGROUND ORBS (The Saiyura Glow) --- */
-        .orb {
-            position: fixed;
-            border-radius: 50%;
-            filter: blur(100px);
+        /* --- 3D CYBER GRID BACKGROUND (Moving Animation) --- */
+        .cyber-grid {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background-image: 
+                linear-gradient(var(--border) 1px, transparent 1px),
+                linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: center center;
+            transform: perspective(500px) rotateX(60deg);
+            animation: moveGrid 5s linear infinite;
+            opacity: 0.3;
+            top: -50%;
+            left: -50%;
+            z-index: -1;
+            mask-image: linear-gradient(to bottom, transparent 0%, black 40%, black 100%);
+        }
+
+        @keyframes moveGrid {
+            0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
+            100% { transform: perspective(500px) rotateX(60deg) translateY(40px); }
+        }
+
+        /* --- MAIN CARD --- */
+        .hero-card {
+            width: 90%;
+            max-width: 1100px;
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            align-items: center;
+            gap: 50px;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0, 243, 255, 0.1);
+        }
+
+        /* Glowing Border Animation */
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 32px;
+            background: linear-gradient(45deg, var(--neon-blue), transparent, var(--neon-purple));
             z-index: -1;
             opacity: 0.5;
-            animation: breathe 10s infinite alternate;
-        }
-        .orb-1 { width: 400px; height: 400px; background: var(--primary-glow); top: -100px; left: -100px; }
-        .orb-2 { width: 300px; height: 300px; background: var(--accent-glow); bottom: -50px; right: -50px; animation-delay: -5s; }
-
-        @keyframes breathe {
-            0% { transform: scale(1); opacity: 0.4; }
-            100% { transform: scale(1.2); opacity: 0.6; }
+            filter: blur(10px);
         }
 
-        /* --- MAIN LAYOUT: THE BENTO GRID --- */
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: auto auto;
-            gap: 20px;
-            max-width: 1100px;
-            width: 100%;
-        }
-
-        /* --- GLASS CARDS --- */
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            padding: 30px;
-            backdrop-filter: blur(40px);
-            -webkit-backdrop-filter: blur(40px);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        /* Subtle spotlight effect on hover */
-        .card:hover {
-            border-color: rgba(255, 255, 255, 0.2);
-            background: var(--card-hover);
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
-        }
-
-        /* Typography */
-        h1, h2, h3 { font-family: 'Outfit', sans-serif; font-weight: 700; color: white; }
-        p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-top: 10px; }
-        
-        .badge {
-            background: linear-gradient(90deg, #2c0b4f, #4c1d95);
-            color: #d8b4fe;
-            padding: 6px 12px;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
+        /* --- LEFT CONTENT --- */
+        .content h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--neon-blue);
+            font-size: 1rem;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            border: 1px solid rgba(216, 180, 254, 0.2);
-            align-self: flex-start;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
-        /* --- GRID AREAS --- */
-        
-        /* 1. Profile / Intro (Big Left Block) */
-        .area-intro {
-            grid-column: span 2;
-            justify-content: center;
+        .content h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, #b3b3b3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .intro-header h1 { font-size: 2.8rem; line-height: 1.1; margin-bottom: 15px; }
 
-        /* 2. The Photo (Big Right Block) */
-        .area-photo {
-            grid-column: span 2;
-            height: 350px;
-            padding: 0;
-            border: 0;
-            background: transparent;
+        .content p {
+            color: #a1a1aa;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            border-left: 2px solid var(--neon-purple);
+            padding-left: 20px;
+        }
+
+        .btn-row {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .photo-container {
-            width: 100%;
-            height: 100%;
-            border-radius: 24px;
-            overflow: hidden;
-            position: relative;
-            border: 1px solid var(--card-border);
-        }
-        .photo-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            /* Filter to blend image better with dark theme */
-            filter: brightness(0.95) contrast(1.05); 
-            transition: transform 0.5s;
-        }
-        .area-photo:hover img { transform: scale(1.05); }
-        
-        .status-badge {
-            position: absolute;
-            bottom: 20px; left: 20px;
-            background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(10px);
-            padding: 8px 16px;
-            border-radius: 30px;
-            color: white;
-            font-size: 0.8rem;
-            border: 1px solid rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 10px #22c55e; }
-
-        /* 3. Services (Bottom Row) */
-        .area-services { grid-column: span 2; }
-        .service-list { list-style: none; margin-top: 20px; }
-        .service-list li {
-            display: flex; align-items: center; gap: 10px;
-            margin-bottom: 12px;
-            color: #cbd5e1;
-            font-weight: 500;
-        }
-        .service-list i { color: var(--accent-glow); }
-
-        /* 4. Connect / Hire (Bottom Row) */
-        .area-connect { grid-column: span 2; }
-        
-        .btn-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-top: auto;
-            padding-top: 20px;
+            flex-wrap: wrap;
         }
+
         .btn {
-            text-decoration: none;
-            padding: 15px;
+            padding: 15px 30px;
             border-radius: 12px;
-            text-align: center;
-            font-weight: 600;
-            transition: 0.3s;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            font-size: 0.95rem;
+            gap: 10px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
         }
-        
-        /* Button Colors */
-        .btn-upwork { background: rgba(20, 168, 0, 0.1); color: #22c55e; border: 1px solid rgba(20, 168, 0, 0.2); }
-        .btn-upwork:hover { background: #22c55e; color: white; transform: translateY(-3px); }
-        
-        .btn-fiverr { background: rgba(29, 191, 115, 0.1); color: #1dbf73; border: 1px solid rgba(29, 191, 115, 0.2); }
-        .btn-fiverr:hover { background: #1dbf73; color: white; transform: translateY(-3px); }
 
-        .btn-company {
-            margin-top: 15px;
-            background: white;
+        .btn-primary {
+            background: var(--neon-blue);
             color: black;
-            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
         }
-        .btn-company:hover { background: #e2e8f0; transform: translateY(-3px); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 0 40px rgba(0, 243, 255, 0.6); }
 
-        /* --- MOBILE RESPONSIVE --- */
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: white;
+        }
+        .btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.05); }
+
+        /* --- RIGHT IMAGE --- */
+        .image-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.1);
+            position: relative;
+            z-index: 2;
+            /* Using Direct Link for 100% Success */
+        }
+
+        /* Rotating Ring behind image */
+        .ring {
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            border: 2px dashed var(--neon-purple);
+            animation: rotate 10s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
+
+        /* --- STATS BAR --- */
+        .stats-bar {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            justify-content: center;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat span { display: block; }
+        .stat .num { font-size: 1.5rem; font-weight: 700; color: white; }
+        .stat .label { font-size: 0.8rem; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* --- MOBILE --- */
         @media (max-width: 900px) {
-            body { padding: 20px 10px; align-items: flex-start; }
-            .bento-grid { grid-template-columns: 1fr; gap: 15px; }
-            .area-intro, .area-photo, .area-services, .area-connect { grid-column: span 1; }
-            .area-photo { height: 350px; } /* Increased height for mobile visibility */
-            .intro-header h1 { font-size: 2.2rem; }
-            .card { padding: 25px; }
+            body { height: auto; padding: 40px 20px; overflow-y: auto; }
+            .hero-card { grid-template-columns: 1fr; text-align: center; padding: 40px 20px; margin-top: 50px; }
+            .content p { border-left: none; padding: 0; }
+            .btn-row { justify-content: center; }
+            .image-wrapper { order: -1; margin-bottom: 30px; }
+            .profile-img { width: 200px; height: 200px; }
+            .ring { width: 230px; height: 230px; }
+            .content h1 { font-size: 2.5rem; }
+            .stats-bar { position: relative; bottom: auto; margin-top: 40px; flex-direction: column; gap: 20px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
+    <div class="cyber-grid"></div>
 
-    <div class="bento-grid">
+    <div class="hero-card">
         
-        <div class="card area-intro">
-            <div class="badge">Founder @ SK-iTPRO</div>
-            <div class="intro-header">
-                <h1>Sagar Keshwala</h1>
-                <h2 style="font-weight: 400; color: var(--text-muted); font-size: 1.4rem;">Architecting <span style="color: white;">Digital Excellence</span></h2>
-            </div>
-            <p style="margin-top: 20px; font-size: 1.1rem;">
-                I provide high-performance, <strong>White-Label Web & App Solutions</strong> for agencies worldwide. 
-                I act as your silent technical partner, delivering international standard code that scales.
+        <div class="content">
+            <h2>Founder @ SK-iTPRO</h2>
+            <h1>Sagar Keshwala</h1>
+            <p>
+                The silent architect behind high-performance digital businesses. 
+                I provide <strong>White-Label Solutions</strong> that empower global agencies to scale without limits.
             </p>
-            <a href="http://www.sk-itpro.com" target="_blank" class="btn btn-company">
-                <i class="fas fa-globe"></i> Visit Company Website
-            </a>
-        </div>
 
-        <div class="card area-photo">
-            <div class="photo-container">
-                <img src="https://avatars.githubusercontent.com/u/sagarkeshwala?v=4" alt="Sagar Keshwala">
-                
-                <div class="status-badge">
-                    <div class="dot"></div>
-                    <span>Available for Projects</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card area-services">
-            <h3><i class="fas fa-layer-group" style="color: var(--accent-glow);"></i> Core Expertise</h3>
-            <p>Tailored for Agency Growth & Enterprise Needs.</p>
-            <ul class="service-list">
-                <li><i class="fas fa-check-circle"></i> White-Label Web/App Development</li>
-                <li><i class="fas fa-check-circle"></i> Custom CRM & SaaS Architecture</li>
-                <li><i class="fas fa-check-circle"></i> Performance & SEO Optimization</li>
-                <li><i class="fas fa-check-circle"></i> Next.js & PHP Expert Solutions</li>
-            </ul>
-        </div>
-
-        <div class="card area-connect">
-            <h3><i class="fas fa-handshake" style="color: #d8b4fe;"></i> Let's Collaborate</h3>
-            <p>Secure hire via international platforms.</p>
-            
-            <div class="btn-container">
-                <a href="https://www.upwork.com/freelancers/sagarkeshwala2" target="_blank" class="btn btn-upwork">
-                    <i class="fas fa-circle-check"></i> Upwork
+            <div class="btn-row">
+                <a href="https://www.upwork.com/freelancers/sagarkeshwala2" target="_blank" class="btn btn-primary">
+                    Hire on Upwork <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="btn btn-fiverr">
-                    <i class="fas fa-star"></i> Fiverr
+                <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="btn btn-secondary">
+                    Hire on Fiverr
+                </a>
+                <a href="http://www.sk-itpro.com" target="_blank" class="btn btn-secondary" style="border-color: var(--neon-purple); color: var(--neon-purple);">
+                    Visit Company
                 </a>
             </div>
-            
-            <div style="margin-top: 20px; text-align: center;">
-                <a href="https://wa.me/916354868473" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem;">
-                    <i class="fab fa-whatsapp"></i> +91 63548 68473
-                </a>
+        </div>
+
+        <div class="image-wrapper">
+            <div class="ring"></div>
+            <img src="https://avatars.githubusercontent.com/u/sagarkeshwala?v=4" alt="Sagar Keshwala" class="profile-img">
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="num">White-Label</span>
+                <span class="label">Specialist</span>
+            </div>
+            <div class="stat">
+                <span class="num">Next.js / PHP</span>
+                <span class="label">Architecture</span>
+            </div>
+            <div class="stat">
+                <span class="num">Global</span>
+                <span class="label">Clients</span>
             </div>
         </div>
 
