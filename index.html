@@ -3,270 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Keshwala | Founder SK-iTPRO</title>
+    <meta name="description" content="Sagar Keshwala - Founder of SK-iTPRO. Providing premium white-label web & app solutions for agencies and businesses globally.">
+    <title>Sagar Keshwala | Strategic Tech Partner</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         :root {
+            --bg-dark: #0a0f1c;
             --glass-bg: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
-            --glass-blur: 20px;
-            --primary-accent: #00d2ff;
-            --whatsapp-color: #25D366;
-            --email-color: #EA4335;
+            --glass-border: rgba(255, 255, 255, 0.05);
+            --primary: #3b82f6; /* Trust Blue */
+            --accent: #06b6d4; /* Cyan */
+            --upwork: #14a800;
+            --fiverr: #1dbf73;
             --text-main: #ffffff;
             --text-muted: #94a3b8;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            /* Dynamic Background Gradient */
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(37, 99, 235, 0.2) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.2) 0%, transparent 40%);
+            background-color: var(--bg-dark);
+            background-image: radial-gradient(circle at top right, rgba(59, 130, 246, 0.15), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(6, 182, 212, 0.1), transparent 40%);
             color: var(--text-main);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            line-height: 1.6;
             overflow-x: hidden;
-            padding: 20px;
         }
 
-        /* Floating background shapes */
-        .bg-shape {
-            position: absolute;
-            background: linear-gradient(45deg, #3a86ff, #8338ec);
-            filter: blur(80px);
-            z-index: -1;
-            opacity: 0.4;
-            animation: float 10s infinite ease-in-out;
-        }
-        .shape-1 { width: 400px; height: 400px; top: -100px; left: -100px; border-radius: 50%; }
-        .shape-2 { width: 300px; height: 300px; bottom: -50px; right: -50px; border-radius: 50%; animation-delay: 2s; background: #ff006e; }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(30px, 20px); }
-        }
-
-        /* Main Glass Container */
-        .glass-container {
-            width: 100%;
-            max-width: 1000px;
-            background: var(--glass-bg);
-            backdrop-filter: blur(var(--glass-blur));
-            -webkit-backdrop-filter: blur(var(--glass-blur));
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 60px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
+        /* --- Navbar --- */
+        nav {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .logo { font-weight: 800; font-size: 1.5rem; letter-spacing: -0.5px; }
+        .logo span { color: var(--primary); }
+
+        /* --- Hero Section --- */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
             position: relative;
         }
 
-        /* Left Side: Avatar & Intro */
-        .profile-section { text-align: left; }
-        
-        .avatar-wrapper {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            padding: 5px;
-            background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
-            margin-bottom: 30px;
-        }
-        
-        .avatar {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid rgba(15, 23, 42, 0.8);
-            background: #1e293b;
+        .hero-content { max-width: 800px; z-index: 2; }
+
+        .badge {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            display: inline-block;
+            margin-bottom: 25px;
         }
 
-        h1 {
+        .hero h1 {
             font-size: 3.5rem;
             font-weight: 800;
-            letter-spacing: -1px;
-            background: linear-gradient(to right, #fff, #94a3b8);
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, #cbd5e1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
         }
 
-        .role {
+        .hero p {
             font-size: 1.25rem;
-            color: var(--primary-accent);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            margin-bottom: 25px;
-            display: inline-block;
-        }
-
-        /* Right Side: Content */
-        .content-section p {
             color: var(--text-muted);
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        /* Stats Grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
             margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .stat-card {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: transform 0.3s ease;
+        /* Avatar Styling */
+        .hero-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+            margin-bottom: 30px;
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+
+        /* --- Services Section --- */
+        .services {
+            padding: 80px 5%;
+            background: rgba(255,255,255,0.01);
         }
         
-        .stat-card:hover { 
-            transform: translateY(-5px); 
-            background: rgba(255, 255, 255, 0.06);
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 15px; }
+        .section-title p { color: var(--text-muted); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .stat-card h3 { font-size: 1.5rem; color: #fff; margin-bottom: 5px; }
-        .stat-card span { font-size: 0.9rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 40px 30px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-        /* Buttons */
-        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .card h3 { margin-bottom: 15px; font-size: 1.4rem; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* --- Hire Me Section (CTA) --- */
+        .hire-section {
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
 
         .btn {
-            padding: 14px 28px;
+            padding: 16px 32px;
             border-radius: 12px;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1rem;
             display: flex;
             align-items: center;
             gap: 10px;
-            border: 1px solid transparent;
+            transition: all 0.3s ease;
+            font-size: 1rem;
         }
 
-        /* Primary Button (Website) */
-        .btn-primary {
-            background: #fff;
-            color: #0f172a;
+        .btn-upwork {
+            background: var(--upwork);
+            color: white;
+            box-shadow: 0 10px 30px rgba(20, 168, 0, 0.2);
         }
-        .btn-primary:hover {
-            background: var(--primary-accent);
-            border-color: var(--primary-accent);
-            box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
-            transform: translateY(-2px);
+        .btn-upwork:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(20, 168, 0, 0.4); }
+
+        .btn-fiverr {
+            background: transparent;
+            border: 2px solid var(--fiverr);
+            color: var(--fiverr);
+        }
+        .btn-fiverr:hover { background: var(--fiverr); color: white; transform: translateY(-3px); }
+
+        .btn-contact {
+            background: white;
+            color: var(--bg-dark);
+        }
+        .btn-contact:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2); }
+
+        /* --- Footer --- */
+        footer {
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
 
-        /* WhatsApp Button */
-        .btn-whatsapp {
-            background: rgba(37, 211, 102, 0.1);
-            color: var(--whatsapp-color);
-            border-color: rgba(37, 211, 102, 0.3);
-        }
-        .btn-whatsapp:hover {
-            background: var(--whatsapp-color);
-            color: #fff;
-            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
-            transform: translateY(-2px);
-        }
-
-        /* Email Button */
-        .btn-email {
-            background: rgba(234, 67, 53, 0.1);
-            color: var(--email-color);
-            border-color: rgba(234, 67, 53, 0.3);
-        }
-        .btn-email:hover {
-            background: var(--email-color);
-            color: #fff;
-            box-shadow: 0 0 20px rgba(234, 67, 53, 0.4);
-            transform: translateY(-2px);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 900px) {
-            .glass-container {
-                grid-template-columns: 1fr;
-                padding: 30px;
-                text-align: center;
-                gap: 40px;
-            }
-            .profile-section { display: flex; flex-direction: column; align-items: center; }
-            h1 { font-size: 2.5rem; }
-            .btn-group { justify-content: center; }
-            .stats-grid { text-align: left; }
+        /* --- Mobile Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .btn-container { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
         }
     </style>
 </head>
 <body>
 
-    <div class="bg-shape shape-1"></div>
-    <div class="bg-shape shape-2"></div>
+    <nav>
+        <div class="logo">Sagar<span>Keshwala</span></div>
+        <a href="http://www.sk-itpro.com" target="_blank" style="color: white; text-decoration: none; font-size: 0.9rem; opacity: 0.8;">
+            <i class="fas fa-external-link-alt"></i> Visit Company
+        </a>
+    </nav>
 
-    <main class="glass-container">
-        
-        <div class="profile-section">
-            <div class="avatar-wrapper">
-                <img src="man.png" alt="Sagar Keshwala" class="avatar">
-            </div>
-            <span class="role">Founder @ SK-iTPRO</span>
-            <h1>Sagar Keshwala</h1>
-        </div>
-
-        <div class="content-section">
+    <section class="hero">
+        <div class="hero-content">
+            <img src="https://avatars.githubusercontent.com/u/sagarkeshwala?v=4" alt="Sagar Keshwala" class="hero-img">
+            
+            <div class="badge">Founder @ SK-iTPRO</div>
+            
+            <h1>High-Performance Digital<br>Solutions for Global Brands</h1>
+            
             <p>
-                I architect digital ecosystems that drive business growth. As a seasoned Founder and Full-Stack Engineer, I specialize in transforming complex requirements into high-performance, scalable web solutions using <strong>PHP, Next.js, and Modern UI/UX principles.</strong>
-            </p>
-            <p>
-                My mission is simple: To bridge the gap between aesthetic design and robust backend engineering.
+                I help agencies and businesses build scalable, secure, and world-class web & mobile applications. 
+                Your silent partner for White-Label excellence.
             </p>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3><i class="fas fa-layer-group" style="color: #00d2ff;"></i> Tech Stack</h3>
-                    <span>PHP & Next.js Expert</span>
-                </div>
-                <div class="stat-card">
-                    <h3><i class="fas fa-rocket" style="color: #ff006e;"></i> Focus</h3>
-                    <span>Performance & SEO</span>
-                </div>
-            </div>
-
-            <div class="btn-group">
-                <a href="http://www.sk-itpro.com" class="btn btn-primary" target="_blank">
-                    <i class="fas fa-globe"></i> Visit Website
+            <div class="btn-container" style="margin-top: 30px;">
+                <a href="https://wa.me/916354868473" class="btn btn-contact">
+                    <i class="fab fa-whatsapp"></i> Discuss Project
                 </a>
-                
-                <a href="https://wa.me/916354868473" class="btn btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-
-                <a href="mailto:skitpro92@gmail.com" class="btn btn-email">
-                    <i class="fas fa-envelope"></i> Email
+                <a href="mailto:skitpro92@gmail.com" class="btn" style="border: 1px solid rgba(255,255,255,0.2); color: white;">
+                    <i class="fas fa-envelope"></i> Email Me
                 </a>
             </div>
         </div>
+    </section>
 
-    </main>
+    <section class="services">
+        <div class="section-title">
+            <h2>Custom & White-Label Solutions</h2>
+            <p>Delivering international standard code without the overhead.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                <h3>Web & App Development</h3>
+                <p>Full-cycle development for complex custom platforms. Built for speed, security, and scalability from day one.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-box"><i class="fas fa-user-secret"></i></div>
+                <h3>White-Label for Agencies</h3>
+                <p>I act as your invisible technical arm. You handle the clients; I deliver the code under your brand name.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+                <h3>Custom Architecture</h3>
+                <p>Moving beyond templates. I engineer tailored digital ecosystems designed specifically for your business goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hire-section">
+        <div class="badge" style="background: rgba(30, 191, 115, 0.1); color: #1dbf73; border-color: rgba(30, 191, 115, 0.2);">
+            Available for Hire
+        </div>
+        <h2>Ready to Scale Your Business?</h2>
+        <p style="color: var(--text-muted); margin-top: 15px;">
+            Hire me on your preferred platform for secure project management.
+        </p>
+
+        <div class="btn-container">
+            <a href="https://www.upwork.com/freelancers/sagarkeshwala2" target="_blank" class="btn btn-upwork">
+                <i class="fas fa-circle-check"></i> Hire on Upwork
+            </a>
+            
+            <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="btn btn-fiverr">
+                <i class="fas fa-italic"></i> Hire on Fiverr
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sagar Keshwala. Founder of SK-iTPRO. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
