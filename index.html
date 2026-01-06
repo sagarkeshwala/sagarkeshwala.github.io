@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/200095802?v=4">
     
     <title>Sagar Keshwala | Strategic Technology Partner</title>
-    <meta name="description" content="Discreet technology leadership for agencies that scale globally. White-label systems, engineered for long-term growth.">
+    <meta name="description" content="Strategic technology partner delivering discreet white-label systems for agencies and global businesses. Bespoke web platforms, scalable architecture, long-term growth.">
     <meta name="author" content="Sagar Keshwala">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sagarkeshwala.github.io/" />
@@ -54,13 +54,12 @@
         "addressRegion": "Gujarat",
         "addressCountry": "India"
       },
-      "description": "Discreet technology leadership for agencies that scale globally."
+      "description": "Strategic technology partner delivering discreet white-label systems for agencies and global businesses."
     }
     </script>
 
     <style>
         :root {
-            /* SK-iTPRO Colors */
             --bg-color: #f0ede4; 
             --primary: #4682b4;
             --secondary: #2ecc71;
@@ -102,8 +101,9 @@
             max-width: 1280px;
             height: 85vh;
             background: var(--glass-bg);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
+            /* Reduced Blur to 10px for Performance */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border: 1px solid var(--glass-border);
             box-shadow: var(--shadow);
             border-radius: 30px;
@@ -299,7 +299,7 @@
                 </div>
             </div>
 
-            <section class="page-section active" id="page-1">
+            <section class="page-section active" id="page-1" role="region" aria-label="Partner with SK-iTPRO">
                 <h1 class="page-title">Partner with SK-iTPRO</h1>
                 <div class="about-text">
                     <p style="font-size: 1.1rem; font-weight: 500; color: #2c3e50;">
@@ -326,8 +326,8 @@
                 </div>
             </section>
 
-            <section class="page-section" id="page-2">
-                <h1 class="page-title">What I Do</h1>
+            <section class="page-section" id="page-2" role="region" aria-label="What I Do">
+                <h2 class="page-title">What I Do</h2>
                 <p style="margin-bottom: 30px; font-size: 1.05rem; color: #555;">I operate as a silent execution layer for agencies—engineering, maintaining, and scaling systems your clients experience as refined, stable, and dependable.</p>
                 <div class="services-grid">
                     <div class="service-card">
@@ -353,8 +353,8 @@
                 </div>
             </section>
 
-            <section class="page-section" id="page-3">
-                <h1 class="page-title">Get in Touch</h1>
+            <section class="page-section" id="page-3" role="region" aria-label="Get in Touch">
+                <h2 class="page-title">Get in Touch</h2>
                 <div class="contact-intro">
                     <p style="margin-bottom: 35px;">
                         If you’re an agency or business looking for a reliable, long-term technology partner, I’d be glad to explore how we can work together.
@@ -374,7 +374,7 @@
                     <a href="mailto:skitpro92@gmail.com" class="contact-card">
                         <svg class="icon-lg" style="fill:#ea4335; margin-bottom:10px;" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                         <h3>Email Communication</h3>
-                        <span>Direct communication · Response in 24h</span>
+                        <span>Professional response within 24h</span>
                     </a>
                 </div>
             </section>
@@ -387,7 +387,8 @@
     <script>
         // Wait for scripts to load
         window.onload = function() {
-            if (typeof $ !== 'undefined') {
+            // Disable Ripples on Mobile for Performance
+            if (typeof $ !== 'undefined' && window.innerWidth > 768) {
                 $('body').ripples({
                     resolution: 512,
                     dropRadius: 20,
@@ -422,7 +423,7 @@
             showPage(currentPage);
         }
 
-        // Typewriter Effect (UPDATED ROLES)
+        // Typewriter Effect (UPDATED ROLES WITH SAFETY CHECK)
         const roles = [
             "Founder @ SK-iTPRO",
             "Strategic Technology Partner",
@@ -434,6 +435,8 @@
         const typeTarget = document.getElementById("typewriter");
 
         function typeWriter() {
+            if (!typeTarget) return; // Safety check
+            
             const currentRole = roles[roleIndex];
             if (isDeleting) {
                 typeTarget.textContent = currentRole.substring(0, charIndex--);
