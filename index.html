@@ -1,476 +1,1003 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/200095802?v=4">
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/200095802?v=4">
-    <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/200095802?v=4">
-    
-    <title>Sagar Keshwala | Strategic Technology Partner for Agencies</title>
-    <meta name="description" content="Founder & Strategic Technology Partner to Agencies & Growth-Stage Businesses. Delivering discreet, high-performance white-label solutions globally.">
-    <meta name="author" content="Sagar Keshwala">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sagarkeshwala.github.io/" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sagarkeshwala.github.io/">
-    <meta property="og:title" content="Sagar Keshwala | Strategic Technology Partner for Agencies">
-    <meta property="og:description" content="Founder & Strategic Technology Partner to Agencies & Growth-Stage Businesses.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/200095802?v=4">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://sagarkeshwala.github.io/">
-    <meta name="twitter:title" content="Sagar Keshwala | Strategic Technology Partner for Agencies">
-    <meta name="twitter:description" content="Serving Global Agencies & Distributed Teams with high-performance white-label architecture.">
-    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/200095802?v=4">
-    <meta name="twitter:creator" content="@itprosk">
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/200095802?v=4" />
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/200095802?v=4" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Sagar Keshwala",
-      "jobTitle": "Founder & Strategic Technology Partner",
-      "url": "https://sagarkeshwala.github.io/",
-      "image": "https://avatars.githubusercontent.com/u/200095802?v=4",
-      "knowsAbout": ["White-label development", "System architecture", "Scalable web platforms", "Next.js", "PHP"],
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Strategic Technology Partner",
-        "occupationLocation": { "@type": "AdministrativeArea", "name": "Global" }
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/sagar-keshwala/",
-        "https://github.com/sagarkeshwala",
-        "https://twitter.com/itprosk"
-      ],
-      "worksFor": { "@type": "Organization", "name": "SK-iTPRO", "url": "http://www.sk-itpro.com" },
-      "description": "Strategic Technology Partner to Agencies & Growth-Stage Businesses."
-    }
-    </script>
+        <title>Sagar Keshwala | Founder @ SK-iTPRO</title>
+        <meta
+            name="description"
+            content="Sagar Keshwala - Founder of SK-iTPRO. Strategic Technology Partner & Web Developer based in Gujarat, India."
+        />
 
-    <style>
-        :root {
-            --bg-color: #f0ede4; 
-            --primary: #4682b4;
-            --secondary: #2ecc71;
-            --glass-bg: rgba(255, 255, 255, 0.75); 
-            --glass-border: rgba(255, 255, 255, 0.9);
-            --text-main: #333333;
-            --text-light: #555555;
-            --whatsapp: #25D366;
-            --shadow: 0 20px 60px rgba(0,0,0,0.06);
-        }
+        <style>
+            :root {
+                --bg-color: #f0ede4;
+                --primary: #4682b4;
+                --secondary: #2ecc71;
+                --glass-bg: rgba(255, 255, 255, 0.75);
+                --glass-border: rgba(255, 255, 255, 0.9);
+                --text-main: #333333;
+                --text-light: #555555;
+                --whatsapp: #25d366;
+                --shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+            }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #f0ede4 0%, #e6e9f0 100%);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: var(--text-main);
-            overflow-x: hidden;
-            height: 100vh;
-            display: flex; align-items: center; justify-content: center;
-            position: relative;
-        }
+            body {
+                font-family: "Poppins", sans-serif;
+                background: #f0ede4;
+                color: var(--text-main);
+                overflow-x: hidden;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+            @keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
 
-        @media (prefers-reduced-motion: reduce) { body { animation: none; } }
+            /* Scrollbars */
+            .sidebar::-webkit-scrollbar,
+            .page-section::-webkit-scrollbar {
+                display: none;
+            }
+            .sidebar,
+            .page-section {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
 
-        /* Scrollbars */
-        .sidebar::-webkit-scrollbar, .page-section::-webkit-scrollbar { display: none; }
-        .sidebar, .page-section { -ms-overflow-style: none; scrollbar-width: none; }
+            .icon {
+                width: 18px;
+                height: 18px;
+                fill: currentColor;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .icon-lg {
+                width: 40px;
+                height: 40px;
+                fill: var(--primary);
+                margin-bottom: 15px;
+            }
 
-        .icon { width: 18px; height: 18px; fill: currentColor; display: inline-block; vertical-align: middle; }
-        .icon-lg { width: 40px; height: 40px; fill: var(--primary); margin-bottom: 15px; }
+            /* Layout */
+            .container {
+                width: 90%;
+                max-width: 1280px;
+                height: 85vh;
+                background: var(--glass-bg);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid var(--glass-border);
+                box-shadow: var(--shadow);
+                border-radius: 30px;
+                display: grid;
+                grid-template-columns: 350px 1fr;
+                overflow: hidden;
+                position: relative;
+                z-index: 10;
+            }
 
-        /* Layout */
-        .container {
-            width: 90%; max-width: 1280px; height: 85vh;
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            box-shadow: var(--shadow);
-            border-radius: 30px;
-            display: grid; grid-template-columns: 350px 1fr;
-            overflow: hidden; position: relative; z-index: 10;
-        }
+            /* Sidebar */
+            .sidebar {
+                background: rgba(255, 255, 255, 0.3);
+                border-right: 1px solid var(--glass-border);
+                padding: 40px 30px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow-y: auto;
+                z-index: 10;
+            }
 
-        /* Sidebar */
-        .sidebar {
-            background: rgba(255, 255, 255, 0.6);
-            border-right: 1px solid var(--glass-border);
-            padding: 40px 30px; text-align: center;
-            display: flex; flex-direction: column; align-items: center;
-            overflow-y: auto; z-index: 10;
-        }
+            .profile-img {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                border: 4px solid #fff;
+                margin-bottom: 15px;
+                object-fit: cover;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
 
-        .profile-img {
-            width: 140px; height: 140px; border-radius: 50%; 
-            border: 4px solid #fff; margin-bottom: 15px; 
-            object-fit: cover; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+            .name {
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin-bottom: 5px;
+                color: #2c3e50;
+            }
 
-        .name { font-size: 1.6rem; font-weight: 700; margin-bottom: 5px; color: #2c3e50; }
-        
-        .role-container { height: 35px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; }
-        .role { 
-            color: var(--primary); font-weight: 600; background: #fff; 
-            padding: 0 20px; height: 100%; display: flex; align-items: center;
-            border-radius: 20px; font-size: 0.85rem; min-width: 200px;
-            justify-content: center; border: 1px solid rgba(0,0,0,0.05);
-        }
+            .role-container {
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 25px;
+            }
+            .role {
+                color: var(--primary);
+                font-weight: 600;
+                background: #fff;
+                padding: 0 20px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                min-width: 200px;
+                justify-content: center;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+            }
 
-        .social-grid { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
-        .social-btn {
-            width: 34px; height: 34px; background: #fff; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--text-main); text-decoration: none; transition: 0.3s;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-        .social-btn:hover { background: var(--primary); color: white; transform: translateY(-3px); }
+            .social-grid {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+            }
+            .social-btn {
+                width: 34px;
+                height: 34px;
+                background: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--text-main);
+                text-decoration: none;
+                transition: 0.3s;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            .social-btn:hover {
+                background: var(--primary);
+                color: white;
+                transform: translateY(-3px);
+            }
 
-        .hire-group { display: flex; flex-direction: column; gap: 10px; width: 100%; margin-top: auto; }
-        .btn-hire {
-            padding: 12px; border-radius: 50px; text-decoration: none; font-weight: 600;
-            font-size: 0.9rem; transition: 0.3s; border: 1px solid rgba(0,0,0,0.1);
-            display: flex; align-items: center; justify-content: center; gap: 8px;
-            background: #fff; color: var(--text-main);
-        }
-        .btn-hire:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .btn-whatsapp { 
-            background: var(--whatsapp); color: white; border: none;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
-        }
-        .btn-whatsapp:hover { background: #20bd5a; color: white; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3); }
+            .hire-group {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                margin-top: auto;
+            }
+            .btn-hire {
+                padding: 12px;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.9rem;
+                transition: 0.3s;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                background: #fff;
+                color: var(--text-main);
+            }
+            .btn-hire:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            }
+            .btn-whatsapp {
+                background: var(--whatsapp);
+                color: white;
+                border: none;
+                box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
+            }
+            .btn-whatsapp:hover {
+                background: #20bd5a;
+                color: white;
+                box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            }
 
-        /* Navigation Controls */
-        .nav-controls {
-            position: absolute; top: 30px; right: 40px; z-index: 20;
-            display: flex; flex-direction: column; align-items: center; gap: 10px;
-        }
+            /* Navigation Controls */
+            .nav-controls {
+                position: absolute;
+                top: 30px;
+                right: 40px;
+                z-index: 20;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
 
-        .nav-arrows { 
-            display: flex; background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.1); 
-            border-radius: 30px; overflow: hidden;
-        }
-        .arrow-btn { 
-            width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; 
-            cursor: pointer; color: var(--text-light); transition: 0.3s; background: transparent; border: none; 
-        }
-        .arrow-btn:hover { background: #fff; color: var(--primary); }
-        
-        /* THIS IS THE KEY CSS FOR YOUR LOGIC */
-        .arrow-btn[aria-disabled="true"] { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
-        
-        .arrow-btn:first-child { border-right: 1px solid rgba(0,0,0,0.1); }
+            .nav-arrows {
+                display: flex;
+                background: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 30px;
+                overflow: hidden;
+            }
+            .arrow-btn {
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                color: var(--text-light);
+                transition: 0.3s;
+                background: transparent;
+                border: none;
+            }
+            .arrow-btn:hover {
+                background: #fff;
+                color: var(--primary);
+            }
+            .arrow-btn[aria-disabled="true"] {
+                opacity: 0.4;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+            .arrow-btn:first-child {
+                border-right: 1px solid rgba(0, 0, 0, 0.1);
+            }
 
-        .nav-indicators { display: flex; gap: 8px; }
-        .indicator-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(0,0,0,0.2); transition: 0.3s; }
-        .indicator-dot.active { background: var(--primary); transform: scale(1.2); }
+            .nav-indicators {
+                display: flex;
+                gap: 8px;
+            }
+            .indicator-dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+            }
+            .indicator-dot.active {
+                background: var(--primary);
+                transform: scale(1.2);
+            }
 
-        .content-wrapper { position: relative; overflow: hidden; }
-        .page-section { 
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 60px 50px; 
-            overflow-y: auto; opacity: 0; transform: translateX(50px); 
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); pointer-events: none; 
-        }
-        .page-section.active { opacity: 1; transform: translateX(0); pointer-events: all; z-index: 5; }
+            .content-wrapper {
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+            }
 
-        .page-title { 
-            font-size: 2.5rem; font-weight: 700; margin-bottom: 30px; position: relative; display: inline-block; 
-            background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 25%, var(--primary) 50%, var(--secondary) 75%, var(--primary) 100%); 
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
-            background-size: 200% auto; animation: shine 5s linear infinite; 
-        }
-        
-        .about-text p { margin-bottom: 30px; line-height: 1.8; color: var(--text-main); font-size: 1.05rem; }
-        .philosophy-box {
-            background: rgba(255, 255, 255, 0.5); border-left: 4px solid var(--secondary);
-            border-radius: 0 10px 10px 0; padding: 20px; margin: 30px 0;
-            font-weight: 500; color: #2c3e50; font-style: italic;
-        }
-        
-        /* HEADING HIERARCHY */
-        .section-header h2 { font-size: 1.3rem; margin-bottom: 20px; border-bottom: 2px solid rgba(0,0,0,0.05); padding-bottom: 10px; display: inline-block; color: var(--text-main); }
-        
-        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 40px; }
-        .info-item .label { color: var(--text-light); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 3px; }
-        .info-item .value { font-weight: 600; color: var(--text-main); font-size: 1rem; }
+            .page-section {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 60px 50px;
+                overflow-y: auto;
+                opacity: 0;
+                transform: translateX(50px);
+                transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                pointer-events: none;
+            }
+            .page-section.active {
+                opacity: 1;
+                transform: translateX(0);
+                pointer-events: all;
+                z-index: 5;
+            }
 
-        .services-grid, .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
-        .service-card, .contact-card { 
-            background: rgba(255,255,255,0.6); padding: 30px; border-radius: 20px; 
-            border: 1px solid white; text-align: center; transition: 0.3s; 
-        }
-        .contact-card { text-decoration: none; color: inherit; display: block; }
-        .service-card:hover, .contact-card:hover { 
-            border-color: var(--secondary); transform: translateY(-5px); 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); background: white; 
-        }
-        .service-card h3, .contact-card h3 { font-size: 1.2rem; margin: 10px 0; color: #2c3e50; }
-        .contact-card span { font-size: 0.9rem; color: var(--text-light); }
-        .status-dot { height: 10px; width: 10px; background-color: #2ecc71; border-radius: 50%; display: inline-block; margin-right: 5px; }
+            /* Typography & Global Spacing Fix */
+            .page-title {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 30px;
+                position: relative;
+                display: inline-block;
+                background: linear-gradient(
+                    to right,
+                    var(--primary) 0%,
+                    var(--secondary) 25%,
+                    var(--primary) 50%,
+                    var(--secondary) 75%,
+                    var(--primary) 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% auto;
+                animation: shine 5s linear infinite;
+            }
 
-        @media (max-width: 900px) {
-            body { height: auto; overflow-y: auto; display: block; padding: 20px; }
-            .container { grid-template-columns: 1fr; height: auto; overflow: visible; }
-            .sidebar { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 30px 20px; }
-            .nav-controls { position: absolute; top: 20px; right: 20px; bottom: auto; align-items: flex-end; }
-            .page-section { position: relative; opacity: 1; transform: none; padding: 30px 20px; height: auto; display: none; }
-            .page-section.active { display: block; }
-            .info-grid, .services-grid, .contact-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-</head>
-<body>
+            /* CONSISTENT SPACING FOR ALL PARAGRAPHS */
+            .page-section p {
+                margin-bottom: 25px;
+                line-height: 1.8;
+                color: var(--text-main);
+                font-size: 1.05rem;
+            }
 
-    <div class="container">
-        
-        <aside class="sidebar">
-            <img src="https://avatars.githubusercontent.com/u/200095802?v=4" alt="Sagar Keshwala" class="profile-img" loading="lazy" decoding="async">
-            
-            <h1 class="name">Sagar Keshwala</h1>
-            <div class="role-container">
-                <span class="role" id="typewriter">Founder @ SK-iTPRO</span>
-            </div>
+            /* Timeline / Journey Styles */
+            .journey-list {
+                margin-top: 30px;
+                padding-left: 20px;
+                border-left: 2px solid rgba(0, 0, 0, 0.1);
+            }
+            .journey-item {
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 30px;
+            }
+            .journey-item::before {
+                content: "";
+                position: absolute;
+                left: -9px;
+                top: 5px;
+                width: 16px;
+                height: 16px;
+                background: #fff;
+                border: 3px solid var(--primary);
+                border-radius: 50%;
+            }
+            .journey-item h4 {
+                font-size: 1.1rem;
+                color: #2c3e50;
+                margin-bottom: 5px;
+            }
+            .journey-item .year {
+                font-size: 0.85rem;
+                color: var(--primary);
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                display: block;
+            }
+            .journey-item p {
+                font-size: 0.95rem;
+                color: var(--text-light);
+                margin-bottom: 0;
+            }
 
-            <div class="social-grid">
-                <a href="https://www.linkedin.com/in/sagar-keshwala/" target="_blank" class="social-btn" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                <a href="https://www.instagram.com/sagar_keshwala" target="_blank" class="social-btn" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-                <a href="https://github.com/sagarkeshwala" target="_blank" class="social-btn" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-            </div>
+            .philosophy-box {
+                background: rgba(255, 255, 255, 0.5);
+                border-left: 4px solid var(--secondary);
+                border-radius: 0 10px 10px 0;
+                padding: 20px;
+                margin: 30px 0;
+                font-weight: 500;
+                color: #2c3e50;
+                font-style: italic;
+            }
 
-            <div class="hire-group">
-                <a href="https://wa.me/916354868473" target="_blank" class="btn-hire btn-whatsapp">
-                    <svg class="icon" style="fill:white;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> 
-                    WhatsApp Consultation
-                </a>
-                <a href="mailto:skitpro92@gmail.com" class="btn-hire">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> 
-                    Email Me
-                </a>
-                <a href="http://www.sk-itpro.com" target="_blank" class="btn-hire">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> 
-                    Visit Company
-                </a>
-            </div>
-        </aside>
+            .section-header h2 {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+                padding-bottom: 10px;
+                display: inline-block;
+                color: var(--text-main);
+            }
 
-        <div class="content-wrapper">
-            
-            <div class="nav-controls">
-                <div class="nav-arrows">
-                    <button class="arrow-btn" onclick="prevPage()" aria-label="Previous section" aria-disabled="true"><svg class="icon" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
-                    <button class="arrow-btn" onclick="nextPage()" aria-label="Next section" aria-disabled="false"><svg class="icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+            .info-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+                margin-bottom: 40px;
+            }
+            .info-item .label {
+                color: var(--text-light);
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                display: block;
+                margin-bottom: 3px;
+            }
+            .info-item .value {
+                font-weight: 600;
+                color: var(--text-main);
+                font-size: 1rem;
+            }
+
+            .services-grid,
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+            }
+            .service-card,
+            .contact-card {
+                background: rgba(255, 255, 255, 0.6);
+                padding: 30px;
+                border-radius: 20px;
+                border: 1px solid white;
+                text-align: center;
+                transition: 0.3s;
+            }
+            .contact-card {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+            }
+            .service-card:hover,
+            .contact-card:hover {
+                border-color: var(--secondary);
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                background: white;
+            }
+            .service-card h3,
+            .contact-card h3 {
+                font-size: 1.2rem;
+                margin: 10px 0;
+                color: #2c3e50;
+            }
+            .contact-card span {
+                font-size: 0.9rem;
+                color: var(--text-light);
+            }
+
+            /* Mobile */
+            @media (max-width: 900px) {
+                body {
+                    padding: 10px;
+                    height: auto;
+                    display: block;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                }
+                .container {
+                    grid-template-columns: 1fr;
+                    height: auto;
+                    overflow: visible;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+                .sidebar {
+                    border-right: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    padding: 30px 20px;
+                }
+                .content-wrapper {
+                    height: auto;
+                    min-height: 500px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .nav-controls {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    margin: 0;
+                    padding: 15px 20px;
+                    width: 100%;
+                    order: -1;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                    background: rgba(255, 255, 255, 0.4);
+                }
+                .page-section {
+                    position: relative;
+                    opacity: 1;
+                    transform: none;
+                    padding: 30px 20px;
+                    height: auto;
+                    display: none;
+                    order: 1;
+                }
+                .page-section.active {
+                    display: block;
+                }
+                .info-grid,
+                .services-grid,
+                .contact-grid {
+                    grid-template-columns: 1fr;
+                }
+                .page-title {
+                    font-size: 1.8rem;
+                    margin-top: 0;
+                }
+            }
+            /* ---------------- Animations ---------------- */
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .container {
+                animation: fadeInUp 0.6s ease-out both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <img
+                    src="https://avatars.githubusercontent.com/u/200095802?v=4"
+                    alt="Sagar Keshwala"
+                    class="profile-img"
+                    loading="lazy"
+                    decoding="async"
+                />
+
+                <h1 class="name">Sagar Keshwala</h1>
+                <div class="role-container">
+                    <span class="role" id="typewriter">Founder @ SK-iTPRO</span>
                 </div>
-                <div class="nav-indicators">
-                    <span class="indicator-dot active"></span>
-                    <span class="indicator-dot"></span>
-                    <span class="indicator-dot"></span>
-                    <span class="indicator-dot"></span>
-                </div>
-            </div>
 
-            <section class="page-section active" id="page-1" role="region" aria-labelledby="hero-title">
-                <h1 id="hero-title" class="page-title">Partner with SK-iTPRO</h1>
-                <div class="about-text">
-                    <p style="font-size: 1.1rem; font-weight: 500; color: #2c3e50;">
-                        Founder & Strategic Technology Partner to Agencies & Growth-Stage Businesses.
-                    </p>
+                <div class="social-grid">
+                    <a
+                        href="https://www.linkedin.com/in/sagar-keshwala/"
+                        target="_blank"
+                        class="social-btn"
+                        aria-label="LinkedIn"
+                        ><svg class="icon" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                            /></svg
+                    ></a>
+                    <a
+                        href="https://www.instagram.com/sagar_keshwala"
+                        target="_blank"
+                        class="social-btn"
+                        aria-label="Instagram"
+                        ><svg class="icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                            /></svg
+                    ></a>
+                    <a href="https://github.com/sagarkeshwala" target="_blank" class="social-btn" aria-label="GitHub"
+                        ><svg class="icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            /></svg
+                    ></a>
+                </div>
+
+                <div class="hire-group">
+                    <a href="https://wa.me/916354868473" target="_blank" class="btn-hire btn-whatsapp">
+                        <svg class="icon" style="fill: white" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                            />
+                        </svg>
+                        WhatsApp Consultation
+                    </a>
+                    <a href="mailto:skitpro92@gmail.com" class="btn-hire">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                            />
+                        </svg>
+                        Email Me
+                    </a>
+                    <a href="http://www.sk-itpro.com" target="_blank" class="btn-hire">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                            />
+                        </svg>
+                        Visit Company
+                    </a>
+                </div>
+            </aside>
+
+            <div class="content-wrapper">
+                <div class="nav-controls">
+                    <div class="nav-arrows">
+                        <button
+                            class="arrow-btn"
+                            onclick="prevPage()"
+                            aria-label="Previous section"
+                            aria-disabled="true"
+                        >
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                            </svg>
+                        </button>
+                        <button class="arrow-btn" onclick="nextPage()" aria-label="Next section" aria-disabled="false">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nav-indicators">
+                        <span class="indicator-dot active"></span>
+                        <span class="indicator-dot"></span>
+                        <span class="indicator-dot"></span>
+                        <span class="indicator-dot"></span>
+                        <span class="indicator-dot"></span>
+                        <span class="indicator-dot"></span>
+                    </div>
+                </div>
+
+                <section class="page-section active" id="page-1" role="region" aria-labelledby="intro-title">
+                    <h1 id="intro-title" class="page-title">Sagar Keshwala</h1>
+
+                    <div class="about-text">
+                        <p style="font-size: 1.2rem; font-weight: 600; color: var(--primary); margin-bottom: 30px">
+                            <strong>Founder & Strategic Tech Partner @ SK-iTPRO</strong>
+                        </p>
+                        <p>
+                            I am a <strong>Full-Stack Web Developer</strong> and <strong>UI/UX Designer</strong> based
+                            in Gujarat, India. I craft <strong>high-performance</strong>,
+                            <strong>scalable digital solutions</strong> for <strong>global agencies</strong>, combining
+                            cutting-edge technology with elegant design.
+                        </p>
+                        <p>
+                            My expertise lies in <strong>B2B white-label partnerships</strong>, enabling businesses to
+                            deploy <strong>complex digital platforms</strong> seamlessly. I ensure every project is
+                            <strong>robust</strong>, <strong>secure</strong>, and <strong>optimized for growth</strong>,
+                            letting your team focus on strategy while I handle the technology.
+                        </p>
+                        <p>
+                            From responsive websites to cross-platform apps, my work is designed to deliver
+                            <strong>performance, reliability, and global scalability</strong>, giving your agency a
+                            competitive edge in the digital landscape.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="page-section" id="page-2" role="region" aria-labelledby="story-title">
+                    <h2 id="story-title" class="page-title">My Journey</h2>
+
+                    <div class="about-text">
+                        <p style="font-size: 1.1rem; font-weight: 500; color: #2c3e50">
+                            From <strong>Academic Foundations</strong> to <strong>Global Tech Entrepreneurship</strong>
+                        </p>
+                        <p>
+                            My journey is a blend of <strong>technical mastery</strong>,
+                            <strong>professional discipline</strong>, and <strong>strategic growth</strong>. Each step
+                            has shaped the <strong>vision and expertise</strong> I bring to SK-iTPRO today.
+                        </p>
+
+                        <div class="journey-list">
+                            <div class="journey-item">
+                                <span class="year"><strong>Foundation</strong></span>
+                                <h4><strong>Education:</strong> BSc IT & MSc IT</h4>
+                                <p>
+                                    Completed my <strong>Bachelor’s and Master’s in Information Technology</strong>,
+                                    developing a deep understanding of <strong>software development</strong>,
+                                    <strong>databases</strong>, <strong>UI/UX design principles</strong>, and
+                                    <strong>system architecture</strong>. These skills form the technical backbone of my
+                                    work.
+                                </p>
+                            </div>
+
+                            <div class="journey-item">
+                                <span class="year"><strong>Resilience</strong></span>
+                                <h4><strong>Professional Experience & Government Exam Preparation</strong></h4>
+                                <p>
+                                    Post-graduation, I gained <strong>hands-on industry experience</strong> while
+                                    preparing for challenging <strong>Government exams</strong>. This phase instilled
+                                    <strong>discipline</strong>, <strong>analytical thinking under pressure</strong>,
+                                    and a <strong>work ethic</strong>—qualities central to leading a technology
+                                    enterprise.
+                                </p>
+                            </div>
+
+                            <div class="journey-item">
+                                <span class="year"><strong>Current</strong></span>
+                                <h4><strong>Founder & Strategic Tech Partner, SK-iTPRO</strong></h4>
+                                <p>
+                                    Leveraging years of <strong>technical expertise</strong> and
+                                    <strong>professional resilience</strong>, I founded SK-iTPRO. Today, I collaborate
+                                    with <strong>global agencies</strong> as a
+                                    <strong>trusted technology partner</strong>, delivering
+                                    <strong>high-performance, scalable white-label solutions</strong> that drive growth,
+                                    security, and innovation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page-section" id="page-3" role="region" aria-labelledby="hero-title">
+                    <h2 id="hero-title" class="page-title">Partner with SK-iTPRO</h2>
+                    <div class="about-text">
+                        <p style="font-size: 1.1rem; font-weight: 500; color: #2c3e50">
+                            Strategic Technology Partner for Agencies & Growth-Stage Businesses
+                        </p>
+                        <p>
+                            I empower agencies and growing businesses to scale through discreet, high-performance
+                            white-label technology solutions—engineered to operate seamlessly under your brand.
+                        </p>
+                        <p>
+                            From custom web platforms to complex system architecture, my mission is simple: eliminate
+                            technical friction so your business can accelerate growth with confidence.
+                        </p>
+
+                        <div class="philosophy-box">
+                            “Great technology should feel invisible—reliable, scalable, and always one step ahead of
+                            growth.”
+                        </div>
+
+                        <div class="section-header"><h2>Key Details</h2></div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Reach</span><span class="value">Serving Global Agencies</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Experience</span
+                                ><span class="value">9+ Years · Founder-Level Delivery</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Email</span
+                                ><span class="value"
+                                    ><a
+                                        href="mailto:skitpro92@gmail.com"
+                                        style="text-decoration: none; color: var(--text-main)"
+                                        >skitpro92@gmail.com</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Focus</span
+                                ><span class="value">B2B · White-Label Partnerships</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page-section" id="page-4" role="region" aria-labelledby="services-title">
+                    <h2 id="services-title" class="page-title">What I Do</h2>
                     <p>
-                        I help agencies and growing businesses scale through discreet, high-performance white-label technology solutions—built to operate seamlessly behind your brand.
+                        I operate as a silent execution layer for agencies—engineering, maintaining, and scaling digital
+                        systems that drive growth without adding overhead.
                     </p>
-                    <p>
-                        From custom web platforms to complex system architecture, my role is simple: remove technical friction so your business can grow faster, cleaner, and with confidence. We don’t push technologies—we architect solutions that serve long-term business goals.
-                    </p>
-                    
-                    <div class="philosophy-box">
-                        “Great technology should feel invisible—reliable, scalable, and always one step ahead of growth.”
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"
+                                />
+                            </svg>
+                            <h3>Custom Digital Solutions</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-light)">
+                                Bespoke web and app development engineered around your unique business workflows and
+                                scalable growth requirements.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                                />
+                            </svg>
+                            <h3>White-Label Partnership</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-light)">
+                                Invisible technology partner—your clients stay yours, while I ensure seamless, flawless
+                                delivery behind the scenes.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+                                />
+                            </svg>
+                            <h3>System Architecture</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-light)">
+                                Thoughtful architecture designed for security, resilience, and effortless future
+                                expansion.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67z"
+                                />
+                            </svg>
+                            <h3>Performance & SEO</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-light)">
+                                Speed-first development and robust technical SEO foundations to boost discoverability
+                                and user experience.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page-section" id="page-5" role="region" aria-labelledby="contact-title">
+                    <h2 id="contact-title" class="page-title">Get in Touch</h2>
+                    <div class="contact-intro">
+                        <p>
+                            If you’re an agency or business seeking a reliable, long-term technology partner, I’d be
+                            glad to explore how we can collaborate.
+                        </p>
+                        <p>
+                            Whether you need seamless white-label execution or strategic architectural guidance—the goal
+                            is simple: <strong>build once, scale confidently.</strong>
+                        </p>
                     </div>
 
-                    <div class="section-header"><h2>Key Details</h2></div>
-                    <div class="info-grid">
-                        <div class="info-item"><span class="label">Reach</span><span class="value">Serving Global Agencies & Distributed Teams</span></div>
-                        <div class="info-item"><span class="label">Experience</span><span class="value">9+ Years · Founder-Level Delivery</span></div>
-                        <div class="info-item"><span class="label">Email</span><span class="value"><a href="mailto:skitpro92@gmail.com" style="text-decoration:none; color:var(--text-main);">skitpro92@gmail.com</a></span></div>
-                        <div class="info-item"><span class="label">Focus</span><span class="value">B2B · White-Label · Long-Term Partnerships</span></div>
+                    <div class="contact-grid">
+                        <a href="https://wa.me/916354868473" target="_blank" class="contact-card">
+                            <svg class="icon-lg" style="fill: #25d366; margin-bottom: 10px" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                                />
+                            </svg>
+                            <h3>WhatsApp Consultation</h3>
+                            <span>Open for new partnerships</span>
+                        </a>
+
+                        <a href="mailto:skitpro92@gmail.com" class="contact-card">
+                            <svg class="icon-lg" style="fill: #ea4335; margin-bottom: 10px" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                />
+                            </svg>
+                            <h3>Email Communication</h3>
+                            <span>Professional response within 24 hours</span>
+                        </a>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="page-section" id="page-2" role="region" aria-labelledby="services-title">
-                <h2 id="services-title" class="page-title">What I Do</h2>
-                <p style="margin-bottom: 30px; font-size: 1.05rem; color: #555;">I operate as a silent execution layer for agencies—engineering, maintaining, and scaling systems your clients experience as refined, stable, and dependable.</p>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <svg class="icon-lg" viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
-                        <h3>Custom Digital Solutions</h3>
-                        <p style="font-size: 0.9rem; color: var(--text-light);">Bespoke web and application development engineered around business workflows, scale requirements, and performance expectations—never generic builds.</p>
+                <section class="page-section" id="page-6" role="region" aria-labelledby="engage-title">
+                    <h2 id="engage-title" class="page-title">Engagement Models</h2>
+                    <div class="contact-intro">
+                        <p>
+                            For short-term projects, defined scopes, or platform-specific needs, you can engage my
+                            services securely through trusted global marketplaces.
+                        </p>
+                        <p>
+                            This approach ensures a transparent process, secure escrow protection, and streamlined
+                            billing.
+                        </p>
                     </div>
-                    <div class="service-card">
-                        <svg class="icon-lg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                        <h3>White-Label Tech. Partner</h3>
-                        <p style="font-size: 0.9rem; color: var(--text-light);">A fully invisible delivery partner for agencies. You retain client ownership and brand presence; I ensure the technology performs flawlessly in the background.</p>
+
+                    <div class="contact-grid">
+                        <a
+                            href="https://www.upwork.com/freelancers/sagarkeshwala2"
+                            target="_blank"
+                            class="contact-card"
+                        >
+                            <svg class="icon-lg" style="fill: #14a800; margin-bottom: 10px" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"
+                                />
+                            </svg>
+                            <h3>Engage via Upwork</h3>
+                            <span>Ideal for hourly or fixed-price contracts</span>
+                        </a>
+
+                        <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="contact-card">
+                            <svg class="icon-lg" style="fill: #1dbf73; margin-bottom: 10px" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                                />
+                            </svg>
+                            <h3>Engage via Fiverr</h3>
+                            <span>Perfect for packaged or well-defined gigs</span>
+                        </a>
                     </div>
-                    <div class="service-card">
-                        <svg class="icon-lg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-                        <h3>System Architecture & Scalability</h3>
-                        <p style="font-size: 0.9rem; color: var(--text-light);">Thoughtfully designed system architecture built for security, resilience, and future expansion—so growth never requires rebuilding from scratch.</p>
-                    </div>
-                    <div class="service-card">
-                        <svg class="icon-lg" viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67z"/></svg>
-                        <h3>Performance, SEO & Optimization</h3>
-                        <p style="font-size: 0.9rem; color: var(--text-light);">Speed-first engineering and technical SEO foundations that enhance discoverability, conversion efficiency, and long-term platform health.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page-section" id="page-3" role="region" aria-labelledby="contact-title">
-                <h2 id="contact-title" class="page-title">Get in Touch</h2>
-                <div class="contact-intro">
-                    <p style="margin-bottom: 35px;">
-                        If you’re an agency or business looking for a reliable, long-term technology partner, I’d be glad to explore how we can work together.
-                    </p>
-                    <p style="margin-bottom: 40px;">
-                        Whether you need silent white-label execution, architectural guidance, or scalable delivery support—the goal is simple: <strong>build once, scale confidently.</strong>
-                    </p>
-                </div>
-                
-                <div class="contact-grid">
-                    <a href="https://wa.me/916354868473" target="_blank" class="contact-card">
-                        <svg class="icon-lg" style="fill:#25D366; margin-bottom:10px;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        <h3>WhatsApp Consultation</h3>
-                        <span>Available for new partnerships</span>
-                    </a>
-
-                    <a href="mailto:skitpro92@gmail.com" class="contact-card">
-                        <svg class="icon-lg" style="fill:#ea4335; margin-bottom:10px;" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                        <h3>Email Communication</h3>
-                        <span>Professional response within 24h</span>
-                    </a>
-                </div>
-            </section>
-
-            <section class="page-section" id="page-4" role="region" aria-labelledby="engage-title">
-                <h2 id="engage-title" class="page-title">Engagement Models</h2>
-                <div class="contact-intro">
-                    <p style="margin-bottom: 25px;">
-                        For agencies requiring immediate scalability, I offer flexible engagement options tailored for <strong>short-term contracts</strong> and <strong>defined project scopes</strong>. This model is ideal for teams needing to inject <strong>platform-specific expertise</strong> into an existing workflow without the overhead of a long-term retainer.
-                    </p>
-                    <p style="margin-bottom: 30px;">
-                        You can engage my services securely through <strong>trusted global marketplaces</strong>. This ensures a transparent process with <strong>secure escrow protection</strong> and streamlined billing, backed by a <strong>verified track record</strong> of delivering high-performance solutions globally.
-                   </p>
-                </div>
-                <div class="contact-grid">
-                    <a href="https://www.upwork.com/freelancers/sagarkeshwala2" target="_blank" class="contact-card">
-                        <svg class="icon-lg" style="fill:#14a800; margin-bottom:10px;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-                        <h3>Engage via Upwork</h3>
-                        <span>Best for hourly & fixed-price contracts</span>
-                    </a>
-
-                    <a href="https://www.fiverr.com/sagar_keshwala/" target="_blank" class="contact-card">
-                        <svg class="icon-lg" style="fill:#1dbf73; margin-bottom:10px;" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <h3>Engage via Fiverr</h3>
-                        <span>Best for packaged & defined gigs</span>
-                    </a>
-                </div>
-            </section>
-
+                </section>
+            </div>
         </div>
-    </div>
 
-    <script>
-        // Page Navigation Logic
-        let currentPage = 1;
-        const totalPages = 4;
-        const dots = document.querySelectorAll('.indicator-dot');
-        const prevBtn = document.querySelector('.nav-arrows button:first-child');
-        const nextBtn = document.querySelector('.nav-arrows button:last-child');
+        <script>
+            // Variables
+            let currentPage = 1; // Start at new Page 1
+            const totalPages = 6; // Updated to 6 pages
+            const dots = document.querySelectorAll(".indicator-dot");
+            const prevBtn = document.querySelector(".nav-arrows button:first-child");
+            const nextBtn = document.querySelector(".nav-arrows button:last-child");
 
-        function updateNavState() {
-            // Update Dots
-            dots.forEach(dot => dot.classList.remove('active'));
-            if(dots[currentPage - 1]) dots[currentPage - 1].classList.add('active');
+            function updateNavState() {
+                // Update Dots
+                dots.forEach((dot) => dot.classList.remove("active"));
+                if (dots[currentPage - 1]) dots[currentPage - 1].classList.add("active");
 
-            // Update Arrows Real State (Accessibility + CSS)
-            if (currentPage === 1) {
-                prevBtn.setAttribute('aria-disabled', 'true');
-            } else {
-                prevBtn.setAttribute('aria-disabled', 'false');
+                // Update Arrows
+                if (currentPage === 1) {
+                    prevBtn.setAttribute("aria-disabled", "true");
+                } else {
+                    prevBtn.setAttribute("aria-disabled", "false");
+                }
+
+                if (currentPage === totalPages) {
+                    nextBtn.setAttribute("aria-disabled", "true");
+                } else {
+                    nextBtn.setAttribute("aria-disabled", "false");
+                }
             }
 
-            if (currentPage === totalPages) {
-                nextBtn.setAttribute('aria-disabled', 'true');
-            } else {
-                nextBtn.setAttribute('aria-disabled', 'false');
+            function showPage(pageId) {
+                document.querySelectorAll(".page-section").forEach((page) => page.classList.remove("active"));
+                document.getElementById("page-" + pageId).classList.add("active");
+                currentPage = pageId;
+                updateNavState();
             }
-        }
 
-        function showPage(pageId) {
-            document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active'));
-            document.getElementById('page-' + pageId).classList.add('active');
-            currentPage = pageId;
-            updateNavState();
-        }
-
-        function nextPage() {
-            if (currentPage < totalPages) {
-                showPage(currentPage + 1);
+            function nextPage() {
+                if (currentPage < totalPages) {
+                    showPage(currentPage + 1);
+                }
             }
-        }
 
-        function prevPage() {
-            if (currentPage > 1) {
-                showPage(currentPage - 1);
+            function prevPage() {
+                if (currentPage > 1) {
+                    showPage(currentPage - 1);
+                }
             }
-        }
 
-        // Typewriter Effect
-        const roles = [
-            "Founder @ SK-iTPRO",
-            "Strategic Technology Partner",
-            "White-Label Systems Architect"
-        ];
-        let roleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typeTarget = document.getElementById("typewriter");
+            // Keyboard Navigation
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "ArrowRight") nextPage();
+                if (e.key === "ArrowLeft") prevPage();
+            });
 
-        function typeWriter() {
-            if (!typeTarget) return;
-            const currentRole = roles[roleIndex];
-            
-            if (isDeleting) {
-                typeTarget.textContent = currentRole.substring(0, charIndex--);
-                if (charIndex < 0) { isDeleting = false; roleIndex = (roleIndex + 1) % roles.length; setTimeout(typeWriter, 500); return; }
-            } else {
-                typeTarget.textContent = currentRole.substring(0, charIndex++);
-                if (charIndex === currentRole.length + 1) { isDeleting = true; setTimeout(typeWriter, 2500); return; }
+            // Typewriter Effect
+            const roles = ["Founder @ SK-iTPRO", "Strategic Technology Partner", "White-Label Systems Architect"];
+
+            let roleIndex = 0;
+            let charIndex = 0;
+            let typingSpeed = 100; // ms per character
+            let pauseBetweenRoles = 1500; // pause before switching roles
+
+            const typewriterElement = document.getElementById("typewriter");
+
+            function typeRole() {
+                const currentRole = roles[roleIndex];
+                typewriterElement.textContent = currentRole.slice(0, charIndex + 1);
+                charIndex++;
+
+                if (charIndex < currentRole.length) {
+                    setTimeout(typeRole, typingSpeed);
+                } else {
+                    setTimeout(eraseRole, pauseBetweenRoles);
+                }
             }
-            setTimeout(typeWriter, isDeleting ? 50 : 100);
-        }
-        
-        // Initial Setup
-        document.addEventListener('DOMContentLoaded', () => {
-            typeWriter();
-            updateNavState(); // Check arrows on load
-        });
-    </script>
 
-</body>
+            function eraseRole() {
+                const currentRole = roles[roleIndex];
+                typewriterElement.textContent = currentRole.slice(0, charIndex - 1);
+                charIndex--;
+
+                if (charIndex > 0) {
+                    setTimeout(eraseRole, typingSpeed / 2);
+                } else {
+                    // Move to next role
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    setTimeout(typeRole, typingSpeed);
+                }
+            }
+
+            // Start the typewriter
+            typeRole();
+
+            // Initial Setup
+            document.addEventListener("DOMContentLoaded", () => {
+                showPage(currentPage);
+                typeWriter();
+            });
+        </script>
+    </body>
 </html>
