@@ -536,15 +536,21 @@
             }
         </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3YR6J3G736"></script>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFKSEZCY1L"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-ZFKSEZCY1L');
+  gtag('config', 'G-ZFKSEZCY1L', {
+    'cookie_domain': 'auto',
+    'linker': {
+      'domains': ['sk-itpro.com','sagarkeshwala.github.io']
+    }
+  });
 </script>
+
 
 
         
